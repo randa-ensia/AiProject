@@ -1947,8 +1947,92 @@ state={
                 'terre_au_repo':5583,
                 'unused land':26405 
             }
-        }
+        },
     
+    ###############################################################
+    ###############################################################
+        'GUELMA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':79629,
+                    'production': 2541890,
+                    'condition':'Below average',
+                    'productivity':33.75,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Potatoes':{
+                    'lands_surface':331,
+                    'production': 103409,
+                    'condition':'Below average',
+                    'productivity':312.7,
+                },
+                'Tomatoes':{
+                    'lands_surface':184,
+                    'production': 67490,
+                    'condition':'Poor',
+                    'productivity':366.8,
+                },
+                'Greenpepper':{
+                    'lands_surface':72,
+                    'production':9590,
+                    'condition':'Poor',
+                    'productivity':133.2,
+                },
+                'Aubergines':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Onions':{
+                    'lands_surface':914,
+                    'production':310920,
+                    'condition':'Above average',
+                    'productivity':340.2,
+                },
+                'Carrots':{
+                    'lands_surface':7,
+                    'production':1860,
+                    'condition':'Above average',
+                    'productivity':265.7,
+                },
+                'Lemon':{
+                    'lands_surface':27,
+                    'production':4850,
+                    'condition':'Below average',
+                    'productivity':202.1,
+                },
+                'Olive':{
+                    'lands_surface':9531,
+                    'production':72275,
+                    'condition':'Below average',
+                    'productivity':14.0,
+                },
+                'Apple':{
+                    'lands_surface':300,
+                    'production': 40003,
+                    'condition':'Poor',
+                    'productivity':156.4,
+                }
+            },
+            'Land_data':{
+                'cultivated land':131755,
+                'terre_au_repo':5583,
+                'unused land':26405 
+            }
+        },
+        
     ###############################################################
     ###############################################################
 }
