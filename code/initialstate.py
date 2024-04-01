@@ -1951,89 +1951,981 @@ state={
     
     ###############################################################
     ###############################################################
-        'GUELMA':{
+        
+    ###############################################################
+    ###############################################################
+        
+        'TINDOUF':{
             'Products':{
                 'Wheat':{
-                    'lands_surface':79629,
-                    'production': 2541890,
+                    'lands_surface':17264,
+                    'production': 691593,
                     'condition':'Below average',
-                    'productivity':33.75,
+                    'productivity':37.6,
                 },
                 'Corn':{
                     'lands_surface':0,
                     'production': 0,
-                    'condition':'Poor',
+                    'condition':'NULL',
                     'productivity':0,
                 },
                 'Dates':{
-                    'lands_surface':0,
-                    'production': 0,
+                    'lands_surface':28320,
+                    'production': 934562,
                     'condition':'Poor',
-                    'productivity':0,
+                    'productivity':33.1,
                 },
                 'Potatoes':{
-                    'lands_surface':331,
-                    'production': 103409,
-                    'condition':'Below average',
-                    'productivity':312.7,
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
                 },
                 'Tomatoes':{
-                    'lands_surface':184,
-                    'production': 67490,
+                    'lands_surface':672,
+                    'production': 170114,
                     'condition':'Poor',
-                    'productivity':366.8,
+                    'productivity':253.2,
                 },
                 'Greenpepper':{
-                    'lands_surface':72,
-                    'production':9590,
+                    'lands_surface':30,
+                    'production': 4574,
                     'condition':'Poor',
-                    'productivity':133.2,
+                    'productivity':150.7,
                 },
                 'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
                     'lands_surface':0,
                     'production': 0,
                     'condition':'Poor',
                     'productivity':0,
                 },
-                'Onions':{
-                    'lands_surface':914,
-                    'production':310920,
-                    'condition':'Above average',
-                    'productivity':340.2,
-                },
-                'Carrots':{
-                    'lands_surface':7,
-                    'production':1860,
-                    'condition':'Above average',
-                    'productivity':265.7,
-                },
-                'Lemon':{
-                    'lands_surface':27,
-                    'production':4850,
-                    'condition':'Below average',
-                    'productivity':202.1,
-                },
                 'Olive':{
-                    'lands_surface':9531,
-                    'production':72275,
-                    'condition':'Below average',
-                    'productivity':14.0,
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
                 },
                 'Apple':{
-                    'lands_surface':300,
-                    'production': 40003,
-                    'condition':'Poor',
-                    'productivity':156.4,
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
                 }
             },
             'Land_data':{
-                'cultivated land':131755,
-                'terre_au_repo':5583,
-                'unused land':26405 
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
             }
         },
-        
-    ###############################################################
-    ###############################################################
+        'TISSEMSILT':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'EL-OUED':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'KHENCHELA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'SOUK-AHRAS':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'TIPAZA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'MILA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'AIN-DEFLA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'NAAMA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'A.TEMOUCHENT':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'GHARDAIA':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
+        'RELIZANE':{
+            'Products':{
+                'Wheat':{
+                    'lands_surface':17264,
+                    'production': 691593,
+                    'condition':'Below average',
+                    'productivity':37.6,
+                },
+                'Corn':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'NULL',
+                    'productivity':0,
+                },
+                'Dates':{
+                    'lands_surface':28320,
+                    'production': 934562,
+                    'condition':'Poor',
+                    'productivity':33.1,
+                },
+                'Potatoes':{
+                    'lands_surface':411,
+                    'production': 80204,
+                    'condition':'Poor',
+                    'productivity':195.0,
+                },
+                'Tomatoes':{
+                    'lands_surface':672,
+                    'production': 170114,
+                    'condition':'Poor',
+                    'productivity':253.2,
+                },
+                'Greenpepper':{
+                    'lands_surface':30,
+                    'production': 4574,
+                    'condition':'Poor',
+                    'productivity':150.7,
+                },
+                'Aubergines':{
+                    'lands_surface':79,
+                    'production': 8589,
+                    'condition':'Poor',
+                    'productivity':108.3,
+                },
+                'Onions':{
+                    'lands_surface':713,
+                    'production': 85560,
+                    'condition':'Poor',
+                    'productivity':120,
+                },
+                'Carrots':{
+                    'lands_surface':648,
+                    'production': 74607,
+                    'condition':'Poor',
+                    'productivity':115.2,
+                },
+                'Lemon':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Olive':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'Poor',
+                    'productivity':0,
+                },
+                'Apple':{
+                    'lands_surface':0,
+                    'production': 0,
+                    'condition':'poor',
+                    'productivity':0,
+                }
+            },
+            'Land_data':{
+                'cultivated land':53562,
+                'terre_au_repo':1948,
+                'unused land':464748
+            }
+        },
 }
 }
