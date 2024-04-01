@@ -976,7 +976,7 @@ state={
 
         ###########################################################33
         #############################################################
-        'TLEMCEN':{
+'TLEMCEN':{
             'Products':{
                 'Wheat':{
                     'lands_surface':82796,
@@ -999,31 +999,31 @@ state={
                 'Potatoes':{
                     'lands_surface':5606,
                     'production': 1762100,
-                    'condition':'Poor',
+                    'condition':'Above average',
                     'productivity':314.3,
                 },
                 'Tomatoes':{
                     'lands_surface':1010,
                     'production': 717500,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':710.4,
                 },
                 'Greenpepper':{
                     'lands_surface':700,
                     'production': 175000,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':250.0,
                 },
                 'Aubergines':{
                     'lands_surface':85,
                     'production': 12000,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':141.2,
                 },
                 'Onions':{
                     'lands_surface':1355,
                     'production': 370000,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':273.1,
                 },
                 'Carrots':{
@@ -1035,19 +1035,19 @@ state={
                 'Lemon':{
                     'lands_surface':170,
                     'production': 37500,
-                    'condition':'Ideal',
+                    'condition':'Average',
                     'productivity':250.0,
                 },
                 'Olive':{
                     'lands_surface':15546,
                     'production': 750000,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':35.0,
                 },
                 'Apple':{
                     'lands_surface':1220,
                     'production': 108000,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':120.0,
                 }
             },
@@ -1080,25 +1080,25 @@ state={
                 'Potatoes':{
                     'lands_surface':6470,
                     'production': 2323442,
-                    'condition':'Poor',
+                    'condition':'Above average',
                     'productivity':359.1,
                 },
                 'Tomatoes':{
                     'lands_surface':220,
                     'production': 66000,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':300,
                 },
                 'Greenpepper':{
                     'lands_surface':162,
                     'production': 45360,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':280.0,
                 },
                 'Aubergines':{
                     'lands_surface':40,
                     'production': 12800 ,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':320.0,
                 },
                 'Onions':{
@@ -1143,7 +1143,7 @@ state={
                 'Wheat':{
                     'lands_surface':6637,
                     'production': 136725,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':23.6,
                 },
                 'Corn':{
@@ -1161,31 +1161,31 @@ state={
                 'Potatoes':{
                     'lands_surface':661,
                     'production': 202295,
-                    'condition':'Poor',
+                    'condition':'Above average',
                     'productivity':306.0,
                 },
                 'Tomatoes':{
                     'lands_surface':168,
                     'production': 48209,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':286.6,
                 },
                 'Greenpepper':{
                     'lands_surface':91,
                     'production': 13495,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':149.1,
                 },
                 'Aubergines':{
                     'lands_surface':3,
                     'production': 894 ,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':256.9,
                 },
                 'Onions':{
                     'lands_surface':956,
                     'production': 133309,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':193.5,
                 },
                 'Carrots':{
@@ -1197,7 +1197,7 @@ state={
                 'Lemon':{
                     'lands_surface':75,
                     'production': 20850,
-                    'condition':'Ideal',
+                    'condition':'Above average',
                     'productivity':301.1,
                 },
                 'Olive':{
@@ -1209,7 +1209,7 @@ state={
                 'Apple':{
                     'lands_surface':359,
                     'production': 69004,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':206.8,
                 }
             },
@@ -1224,7 +1224,7 @@ state={
                 'Wheat':{
                     'lands_surface':1538,
                     'production': 49425,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':29.45,
                 },
                 'Corn':{
@@ -1242,43 +1242,43 @@ state={
                 'Potatoes':{
                     'lands_surface':1037,
                     'production': 409650,
-                    'condition':'Poor',
+                    'condition':'Above average',
                     'productivity':394.9,
                 },
                 'Tomatoes':{
                     'lands_surface':949,
                     'production': 523840,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':552.1,
                 },
                 'Greenpepper':{
                     'lands_surface':500,
                     'production': 142385,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':284.9,
                 },
                 'Aubergines':{
                     'lands_surface':520,
                     'production': 152290,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':293.1,
                 },
                 'Onions':{
                     'lands_surface':130,
                     'production': 31330,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':241.0,
                 },
                 'Carrots':{
                     'lands_surface':214,
                     'production': 56345,
-                    'condition':'Above average',
+                    'condition':'Below average',
                     'productivity':263.3,
                 },
                 'Lemon':{
                     'lands_surface':802,
                     'production': 125630,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':217.8,
                 },
                 'Olive':{
@@ -1290,7 +1290,7 @@ state={
                 'Apple':{
                     'lands_surface':891,
                     'production': 182570,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':209.6,
                 }
             },
@@ -1305,7 +1305,7 @@ state={
                 'Wheat':{
                     'lands_surface':7297,
                     'production': 167000,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':26.35,
                 },
                 'Corn':{
@@ -1317,13 +1317,13 @@ state={
                 'Dates':{
                     'lands_surface':260,
                     'production': 13210,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':73.4,
                 },
                 'Potatoes':{
                     'lands_surface':5752,
                     'production': 1644220,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':285.9,
                 },
                 'Tomatoes':{
@@ -1371,7 +1371,7 @@ state={
                 'Apple':{
                     'lands_surface':977,
                     'production': 120900,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':127.1,
                 }
             },
@@ -1386,7 +1386,7 @@ state={
                 'Wheat':{
                     'lands_surface':1322,
                     'production': 35937,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':27.2,
                 },
                 'Corn':{
@@ -1404,13 +1404,13 @@ state={
                 'Potatoes':{
                     'lands_surface':641,
                     'production': 189989,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':296.4,
                 },
                 'Tomatoes':{
                     'lands_surface':669,
                     'production': 420250,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':628.6,
                 },
                 'Greenpepper':{
@@ -1440,19 +1440,19 @@ state={
                 'Lemon':{
                     'lands_surface':51,
                     'production': 8449,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':204.1,
                 },
                 'Olive':{
                     'lands_surface':16603,
                     'production': 555859,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':26.4,
                 },
                 'Apple':{
                     'lands_surface':353,
                     'production': 51860,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':151.3,
                 }
             },
@@ -1485,13 +1485,13 @@ state={
                 'Potatoes':{
                     'lands_surface':1481,
                     'production': 416344,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':281.1,
                 },
                 'Tomatoes':{
                     'lands_surface':608,
                     'production': 203421,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':334.5,
                 },
                 'Greenpepper':{
@@ -1503,13 +1503,13 @@ state={
                 'Aubergines':{
                     'lands_surface':7,
                     'production': 1005,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':143.6,
                 },
                 'Onions':{
                     'lands_surface':443,
                     'production':96965,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':218.8,
                 },
                 'Carrots':{
@@ -1566,25 +1566,25 @@ state={
                 'Potatoes':{
                     'lands_surface':4047,
                     'production': 1194410,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':295.1,
                 },
                 'Tomatoes':{
                     'lands_surface':588,
                     'production': 263600,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':448.3,
                 },
                 'Greenpepper':{
                     'lands_surface':367,
                     'production':91840,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':250.2,
                 },
                 'Aubergines':{
                     'lands_surface':51,
                     'production': 16430,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':322.2,
                 },
                 'Onions':{
@@ -1596,7 +1596,7 @@ state={
                 'Carrots':{
                     'lands_surface':843,
                     'production': 327221,
-                    'condition':'Ideal',
+                    'condition':'Below average',
                     'productivity':388.2,
                 },
                 'Lemon':{
@@ -1608,7 +1608,7 @@ state={
                 'Olive':{
                     'lands_surface':5597,
                     'production': 150098,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':20.9,
                 },
                 'Apple':{
@@ -1629,13 +1629,13 @@ state={
                 'Wheat':{
                     'lands_surface':29630,
                     'production': 730600,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':23.7,
                 },
                 'Corn':{
                     'lands_surface':113,
                     'production': 4990,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':44.2,
                 },
                 'Dates':{
@@ -1647,43 +1647,43 @@ state={
                 'Potatoes':{
                     'lands_surface':6020,
                     'production': 1617730,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':268.7,
                 },
                 'Tomatoes':{
                     'lands_surface':413,
                     'production': 123750,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':300.0,
                 },
                 'Greenpepper':{
                     'lands_surface':379,
                     'production':64505,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':170.2,
                 },
                 'Aubergines':{
                     'lands_surface':101,
                     'production': 20790,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':205.8,
                 },
                 'Onions':{
                     'lands_surface':4363,
                     'production':1197100,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':274.4,
                 },
                 'Carrots':{
                     'lands_surface':566,
                     'production':167980,
-                    'condition':'Above average',
+                    'condition':'Below average',
                     'productivity':296.8,
                 },
                 'Lemon':{
                     'lands_surface':133,
                     'production':23154,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':202.2,
                 },
                 'Olive':{
@@ -1695,7 +1695,7 @@ state={
                 'Apple':{
                     'lands_surface':1721,
                     'production': 215675,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':153.5,
                 }
             },
@@ -1728,31 +1728,31 @@ state={
                 'Potatoes':{
                     'lands_surface':2476,
                     'production': 641867,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':259.2,
                 },
                 'Tomatoes':{
                     'lands_surface':310,
                     'production': 170500,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':550.0,
                 },
                 'Greenpepper':{
                     'lands_surface':200,
                     'production':42000,
-                    'condition':'Poor',
+                    'condition':'Average',
                     'productivity':210.0,
                 },
                 'Aubergines':{
                     'lands_surface':68,
                     'production': 17680,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':260.0,
                 },
                 'Onions':{
                     'lands_surface':655,
                     'production':138140,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':210.9,
                 },
                 'Carrots':{
@@ -1770,7 +1770,7 @@ state={
                 'Olive':{
                     'lands_surface':8781,
                     'production': 223824,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':39.1,
                 },
                 'Apple':{
@@ -1791,7 +1791,7 @@ state={
                 'Wheat':{
                     'lands_surface':14967,
                     'production': 420910,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':30.85,
                 },
                 'Corn':{
@@ -1809,7 +1809,7 @@ state={
                 'Potatoes':{
                     'lands_surface':359,
                     'production': 132615,
-                    'condition':'Poor',
+                    'condition':'Above average',
                     'productivity':369.4,
                 },
                 'Tomatoes':{
@@ -1821,19 +1821,19 @@ state={
                 'Greenpepper':{
                     'lands_surface':337,
                     'production':50425,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':149.6,
                 },
                 'Aubergines':{
                     'lands_surface':146,
                     'production': 19663,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':134.7,
                 },
                 'Onions':{
                     'lands_surface':259,
                     'production':47650,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':184.0,
                 },
                 'Carrots':{
@@ -1845,7 +1845,7 @@ state={
                 'Lemon':{
                     'lands_surface':48,
                     'production': 4525,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':205.7,
                 },
                 'Olive':{
@@ -1857,7 +1857,7 @@ state={
                 'Apple':{
                     'lands_surface':150,
                     'production': 18127,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':140.5,
                 }
             },
@@ -1872,7 +1872,7 @@ state={
                 'Wheat':{
                     'lands_surface':79629,
                     'production': 2541890,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':33.75,
                 },
                 'Corn':{
@@ -1890,19 +1890,19 @@ state={
                 'Potatoes':{
                     'lands_surface':331,
                     'production': 103409,
-                    'condition':'Below average',
+                    'condition':'Above average',
                     'productivity':312.7,
                 },
                 'Tomatoes':{
                     'lands_surface':184,
                     'production': 67490,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':366.8,
                 },
                 'Greenpepper':{
                     'lands_surface':72,
                     'production':9590,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':133.2,
                 },
                 'Aubergines':{
@@ -1920,13 +1920,13 @@ state={
                 'Carrots':{
                     'lands_surface':7,
                     'production':1860,
-                    'condition':'Above average',
+                    'condition':'Below average',
                     'productivity':265.7,
                 },
                 'Lemon':{
                     'lands_surface':27,
                     'production':4850,
-                    'condition':'Below average',
+                    'condition':'Average',
                     'productivity':202.1,
                 },
                 'Olive':{
@@ -1938,7 +1938,7 @@ state={
                 'Apple':{
                     'lands_surface':300,
                     'production': 40003,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':156.4,
                 }
             },
@@ -1947,7 +1947,10 @@ state={
                 'terre_au_repo':5583,
                 'unused land':26405 
             }
-        },
+        }
+    ###############################################################
+},
+
     
     ###############################################################
     ###############################################################
@@ -2927,5 +2930,4 @@ state={
                 'unused land':464748
             }
         },
-}
 }
