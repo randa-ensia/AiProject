@@ -1,0 +1,48 @@
+1 ADRAR:{}
+2 CHLEF:{tomatoes}
+3 LAGHOUAT:{}
+4 O.E.BOUAGHI:{}
+5 BATNA:{}
+6 BEJAIA:{}
+7 BISKRA:{tomatoes,green pepper }
+8 BECHAR:{}
+9 BLIDA:{Potatoes,green pepper}
+10 BOUIRA:{Potatoes}
+11 TAMANRASSET:{}
+12 TEBESSA:{Potatoes}
+13 TLEMCEN:{tomatoes}
+14 TIARET:{Potatoes}
+15 TIZI-OUZOU:{}
+16 ALGER:{Potatoes,tomatoes}
+17 DJELFA:{}
+18 JIJEL:{tomatoes,green pepper}
+19 SETIF:{green pepper}
+20 SAIDA:{}
+21 SKIKDA:{}
+22 S.B.ABBES:{}
+23 ANNABA:{Potatoes}
+24 GUELMA:{}
+25 CONSTANTINE:{}
+26 MEDEA:{}
+27 MOSTAGANEM:{tomatoes,green pepper}
+28 M'SILA:{green pepper}
+29 MASCARA:{}
+30 OUARGLA:{,green pepper}
+31 ORAN:{}
+32 EL-BAYADH:{}
+33 ILLIZI:{}
+34 B.B.ARRERIDJ:{}
+35 BOUMERDES:{}
+36 EL-TARF:{Potatoes}
+37 TINDOUF:{tomatoes,green pepper}
+38 TISSEMSILT:{}
+39 EL-OUED:{Potatoes,tomatoes,green pepper}
+40 KHENCHELA:{}
+41 SOUK-AHRAS:{}
+42 TIPAZA:{tomatoes,green pepper}
+43 MILA:{Potatoes}
+44 AIN-DEFLA:{Potatoes,tomatoes}
+45 NAAMA:{}
+46 A.TEMOUCHENT:{}
+47 GHARDAIA:{}
+48 RELIZANE:{}
