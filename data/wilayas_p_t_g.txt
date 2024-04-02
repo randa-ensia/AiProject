@@ -1,48 +1,48 @@
-1 ADRAR:{corn,wheat}
-2 CHLEF:{tomatoes}
-3 LAGHOUAT:{dates,wheat}
-4 O.E.BOUAGHI:{corn}
-5 BATNA:{dates}
-6 BEJAIA:{}
-7 BISKRA:{tomatoes,green pepper ,dates,wheat}
-8 BECHAR:{}
-9 BLIDA:{Potatoes,green pepper,wheat}
-10 BOUIRA:{Potatoes,wheat}
-11 TAMANRASSET:{}
-12 TEBESSA:{Potatoes,dates}
-13 TLEMCEN:{tomatoes}
-14 TIARET:{Potatoes}
-15 TIZI-OUZOU:{}
-16 ALGER:{Potatoes,tomatoes}
-17 DJELFA:{dates}
-18 JIJEL:{tomatoes,green pepper,corn}
-19 SETIF:{green pepper}
-20 SAIDA:{}
-21 SKIKDA:{corn}
-22 S.B.ABBES:{corn}
-23 ANNABA:{Potatoes,wheat}
-24 GUELMA:{wheat}
-25 CONSTANTINE:{wheat}
-26 MEDEA:{}
-27 MOSTAGANEM:{tomatoes,green pepper}
-28 M'SILA:{green pepper}
-29 MASCARA:{}
-30 OUARGLA:{,green pepper,dates,wheat}
-31 ORAN:{}
-32 EL-BAYADH:{corn,dates}
-33 ILLIZI:{}
-34 B.B.ARRERIDJ:{}
-35 BOUMERDES:{}
-36 EL-TARF:{Potatoes}
-37 TINDOUF:{tomatoes,green pepper}
-38 TISSEMSILT:{}
-39 EL-OUED:{Potatoes,tomatoes,green pepper,dates}
-40 KHENCHELA:{dates}
-41 SOUK-AHRAS:{}
-42 TIPAZA:{tomatoes,green pepper}
-43 MILA:{Potatoes,wheat}
-44 AIN-DEFLA:{Potatoes,tomatoes}
-45 NAAMA:{}
-46 A.TEMOUCHENT:{}
-47 GHARDAIA:{dates}
-48 RELIZANE:{}
+ADRAR: {corn, wheat}
+CHLEF: {tomatoes, carrot, onion}
+LAGHOUAT: {dates, wheat}
+O.E.BOUAGHI: {corn, carrot, onion}
+BATNA: {dates}
+BEJAIA: {}
+BISKRA: {tomatoes, green pepper, dates, wheat, aubergine}
+BECHAR: {}
+BLIDA: {Potatoes, green pepper, wheat, aubergine}
+BOUIRA: {Potatoes}
+TAMANRASSET: {}
+TEBESSA: {Potatoes, dates}
+TLEMCEN: {tomatoes}
+TIARET: {Potatoes, onion, aubergine}
+TIZI-OUZOU: {}
+ALGER: {Potatoes, tomatoes, carrot}
+DJELFA: {dates, onion}
+JIJEL: {tomatoes, green pepper, corn, onion}
+SETIF: {green pepper}
+SAIDA: {carrot, onion, aubergine}
+SKIKDA: {corn, carrot}
+S.B.ABBES: {corn}
+ANNABA: {Potatoes, wheat}
+GUELMA: {wheat, carrot}
+CONSTANTINE: {wheat}
+MEDEA: {}
+MOSTAGANEM: {tomatoes, green pepper, carrot, onion, aubergine}
+M'SILA: {green pepper, carrot, aubergine}
+MASCARA: {onion}
+OUARGLA: {green pepper}
+ORAN: {}
+EL-BAYADH: {corn, dates, onion, aubergine}
+ILLIZI: {}
+B.B.ARRERIDJ: {}
+BOUMERDES: {}
+EL-TARF: {Potatoes}
+TINDOUF: {tomatoes, green pepper, aubergine}
+TISSEMSILT: {}
+EL-OUED: {Potatoes, tomatoes, green pepper, dates}
+KHENCHELA: {dates, aubergine}
+SOUK-AHRAS: {}
+TIPAZA: {tomatoes, green pepper, carrot}
+MILA: {Potatoes, wheat, carrot, aubergine}
+AIN-DEFLA: {Potatoes, tomatoes, onion}
+NAAMA: {}
+A.TEMOUCHENT: {}
+GHARDAIA: {dates}
+RELIZANE: {}
