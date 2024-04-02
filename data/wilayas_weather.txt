@@ -1,0 +1,18 @@
+Mediterranean Region:
+--------------------
+Tlemcen: Wheat, potatoes, carrots, apples, olives, lemons
+Tizi Ouzou: Carrots, olives, lemons
+Algiers: Carrots, apples, potatoes, onions, olives, lemons
+Jijel: Carrots, apples, tomatoes,onions
+Skikda: Carrots, apples, lemons,onions
+Annaba: Carrots, apples, potatoes, onions, olives, lemons
+Continental Region:
+------------------
+Tiaret: Wheat, carrots, potatoes, corn, peppers, onions
+Setif: Wheat, corn, carrots, onions
+Saida: Wheat, corn, carrots, tomatoes, peppers, onions
+S.B.A: Wheat, corn, carrots, onions
+Desert Region:
+-------------
+Djelfa: Dates, carrots, tomatoes, green peppers,aubergines ,onions
+Guelma: Dates , carrots, tomatoes, onions,green peppers,aubergines
