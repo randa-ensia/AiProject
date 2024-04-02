@@ -1,0 +1,272 @@
+-------------------------------------------------------------------
+Mediterranean Agriculture - Key takeaways
+-------------------------------------------------------------------
+-named after the Mediterranean sea have warm and dry summer and mild rainy winters.
+-Temperature:
+  It never gets too hot or too cold in Mediterranean climates, 
+big reason why people are drawn to them for living or vacation. While summer temperatures in the hottest Mediterranean regions can reach 30 degrees celsius, winters rarely get below zero except for very high altitudes
+-Major crops : olive , grains(wheat) , citrus 
+The challenge of keeping crops irrigated during summer is the challenge 
+The Mediterranean agricultural industry is heavily dependent on
+water using an astounding 75% water resources. 
+# Water Usage #
+Due to the long dry season during summertime, irrigation is essential for some crops that aren't naturally adapted to long dry conditions. Because groundwater supplies are generally at their lowest in summer, not being replenished by rainwater, irrigating crops puts extra strain on those supplies. Some crops, like olives, are adapted to these conditions being native to the Mediterranean basin, but others, like citrus fruit and require more extensive irrigation during dry seasons to continue to grow well.
+# Habitat Destruction #
+Owing to the rugged terrain of most Mediterranean climate areas, lots of land has to be cleared to make suitable farms. This process often includes the uprooting of native plants so another crop can be planted. Because less land is available due to geologic reasons, Mediterranean farming is also much more intensive. High levels of fertilizers, machinery, and labour are needed to get as much production out of the land as possible. All of this leads to more harmful effects on habitats because agrochemicals have more opportunities to enter water supplies and impact wildlife.
+
+-------------------------------------------------------------------
+The Continental region Agriculture - Key takeaways
+-------------------------------------------------------------------
+The Continental region will be having less rain during the summer, with an increased risk of droughts and water stress, and more heavy rains and floods during the winter
+-Major crops :Corn and wheat 
+-------------------------------------------------------------------
+The Desert region Agriculture - Key takeaways
+-------------------------------------------------------------------
+have very hot summers that have temperatures that can even reach 45 °C (113 °F). Temperatures can even be very warm during winter.
+Heat-loving plants are best suited for summer production in desert climates. The plant families that fit into the heat-loving category are nightshade or Solanaceae (tomatoes, peppers, eggplant) and squash or Cucurbitaceae (cucumbers, melons, summer and winter squash). Corn and beans also perform best in hot climates.
+Desert agriculture is becoming popular nowadays as climate change is hitting third-world countries hard. With climate change, areas that used to get enough rainfall for normal crop growth are experiencing less rainfall, and farmers have no choice but to start practicing desert agriculture so as to sustain high yields and manage to achieve food security. Furthermore, desert agriculture is more than just selecting crops that normally withstand harsh desert conditions. It is also the application of biotechnology and breeding procedures to modify crops so that they can still be grown in desert conditions despite being the crops suitable for high rainfall areas. It involves the application of initiatives aiming at improving crop production in low rainfall regime areas. A good example is an innovative approach called “Neo domestication,” which is being championed by King Abdallah University of Science and Technology (KAUST). It is a process based on rapid domestication and improvement of crops’ wild relatives and orphan crops with a high level of adaptation to marginal environments. In simple terms, desert agriculture is the process of manipulating the crops so that they get adapt to the harsh growing conditions but still give out the highest yield possible.
+______________________________________________________________________________________________________________________________________
+
+-Wheat: 
+Temperatures exceeding 90°F (32°C) can cause heat stress in plants and lower crop production
+Spring wheat growing, on the other hand, demands a temperature between 70 and 75°F (21 and 24°C) for the best result
+
+-Corn:
+Corn does best with warm, sunny growing weather, well-distributed intermittent moderate rains
+
+-Dates : 
+Date palms need full sun and warm temperatures to grow, preferably in dry heat or humidity
+
+-Potatoes : 
+Potato crops are known to be sensitive to high temperatures
+Potatoes thrive in moderate climates
+
+-Tomatoes : 
+are Warm season veggies, on the other hand, require higher soil and air temperatures and are always planted after the last frost date. They include tomatoes, peppers, summer squashes, pumpkin, eggplant, cucumbers, melons, and beans.
+Devote a prime, sunny spot to growing tomatoes. Tomatoes need at least 6 to 8 hours of sun to bring out their best flavors.
+
+-greenpeppers : 
+Peppers thrive when temperatures are warm. Being sensitive to the cold
+
+-Aubergines :
+Eggplant (Solanum melongena) is a relative of peppers, tomatoes and tobacco. Eggplant needs warm conditions, and will not thrive during a cool season .
+
+-Onions : 
+they will grow even if the temperature is cold, as long as it's above freezing + excessive rainfall
+
+-Carrots:
+this plant adapts well to a variety of seasonal conditions. Ensure gradual change in its temperature environment for optimal growth.
+
+-Lemon : 
+Citrus fruits need sunshine and warm weather in order to provide the highest quality fruit
+
+-olive : 
+Olive trees require a Mediterranean-like climate to survive. They need a long, hot summer and a cool, not frigid, winter.
+
+-Apple : 
+Although apple trees are relatively resilient, they tend to thrive in climates where it's cold in the winter, moderate in the summer and has medium to high humidity rather than a hot and dry climate.
+
+______________________________________________________________________________________________
+
+1. Adjusting Prices:
+To adjust prices based on changes in conditions and production levels, you could consider a formula that takes into account factors such as:
+
+Supply and Demand: Higher production levels relative to demand could lead to lower prices and vice versa.
+Cost of Production: If conditions are improved, leading to higher productivity, you might want to decrease prices to encourage more sales.
+Market Conditions: External factors such as market trends, competitor prices, and economic conditions could also influence price adjustments.
+A simple formula to start with could be:
+
+Adjusted Price=Base Price+Change in Production×Price Elasticity
+Adjusted Price=Base Price+Change in Production×Price Elasticity
+
+Where:
+Base Price: Initial price of the product.
+Change in Production: The difference between current production and previous production levels.
+Price Elasticity: A parameter representing how sensitive the price is to changes in production.
+
+Identify Factors Affecting Cost:
+
+Condition Improvement: The cost of moving from one condition to another depends on various factors such as the amount of labor, materials, and resources required to improve the conditions for a particular crop.
+Location: The cost may vary depending on the specific characteristics of the location (wilaya) where the improvement is made. Factors such as climate, soil quality, and infrastructure availability can influence the cost.
+Product: Different crops may require different inputs and resources for condition improvement. Some crops may naturally thrive in certain conditions and may require less effort and resources to optimize.
+
+so i need factors in this way 
+deserte climate : {
+     Adjustment Factor : from poor to below average 
+     Adjustment Factor : from poor to average 
+     Adjustment Factor : from poor to above average 
+     Adjustment Factor : from poor to ideal
+
+     Adjustment Factor : from below average to average 
+     Adjustment Factor : from below average to above average 
+     Adjustment Factor : from below average to ideal  
+
+     Adjustment Factor : from average to above average 
+     Adjustment Factor : from average to ideal 
+
+     Adjustment Factor : from above average to ideal  
+
+   
+}
+mediterian climate  : {
+     Adjustment Factor : from poor to below average 
+     Adjustment Factor : from poor to average 
+     Adjustment Factor : from poor to above average 
+     Adjustment Factor : from poor to ideal
+
+     Adjustment Factor : from below average to average 
+     Adjustment Factor : from below average to above average 
+     Adjustment Factor : from below average to ideal  
+
+     Adjustment Factor : from average to above average 
+     Adjustment Factor : from average to ideal 
+
+     Adjustment Factor : from above average to ideal  
+
+
+}
+Continental climate:{
+     Adjustment Factor : from poor to below average 
+     Adjustment Factor : from poor to average 
+     Adjustment Factor : from poor to above average 
+     Adjustment Factor : from poor to ideal
+
+     Adjustment Factor : from below average to average 
+     Adjustment Factor : from below average to above average 
+     Adjustment Factor : from below average to ideal  
+
+     Adjustment Factor : from average to above average 
+     Adjustment Factor : from average to ideal 
+
+     Adjustment Factor : from above average to ideal  
+
+  
+}
+
+adjustment_factors = {
+    'desert': {
+        'dates': {
+            'poor_to_below_average': 1.2,
+            'poor_to_average': 1.5,
+            'poor_to_above_average': 1.8,
+            'poor_to_ideal': 2.0,
+            'below_average_to_average': 1.2,
+            'below_average_to_above_average': 1.5,
+            'below_average_to_ideal': 1.8,
+            'average_to_above_average': 1.2,
+            'average_to_ideal': 1.5,
+            'above_average_to_ideal': 1.2
+        },
+        'lemon': {
+            'poor_to_below_average': 1.0,
+            'poor_to_average': 1.3,
+            'poor_to_above_average': 1.6,
+            'poor_to_ideal': 1.8,
+            'below_average_to_average': 1.1,
+            'below_average_to_above_average': 1.4,
+            'below_average_to_ideal': 1.7,
+            'average_to_above_average': 1.2,
+            'average_to_ideal': 1.5,
+            'above_average_to_ideal': 1.2
+        }
+        # Add adjustment factors for other crops in desert climate...
+    },
+    'Mediterranean': {
+        # Define adjustment factors for transitions in Mediterranean climate and different products...
+    },
+    'continental': {
+        # Define adjustment factors for transitions in continental climate and different products...
+    }
+}
+
+# Example: Accessing adjustment factor for moving from poor to below average in desert climate for dates
+desert_dates_poor_to_below_average_factor = adjustment_factors['desert']['dates']['poor_to_below_average']
+print("Adjustment Factor (Desert, Dates, Poor to Below Average):", desert_dates_poor_to_below_average_factor)
+
+# Example: Accessing adjustment factor for moving from poor to below average in desert climate for lemon
+desert_lemon_poor_to_below_average_factor = adjustment_factors['desert']['lemon']['poor_to_below_average']
+print("Adjustment Factor (Desert, Lemon, Poor to Below Average):", desert_lemon_poor_to_below_average_factor)
+
+or 
+
+adjustment_factors = {
+    'desert': {
+        'dates': {
+            'poor': {
+                'below_average': 1.2,
+                'average': 1.5,
+                'above_average': 1.8,
+                'ideal': 2.0
+            },
+            'below_average': {
+                'average': 1.2,
+                'above_average': 1.5,
+                'ideal': 1.8
+            },
+            'average': {
+                'above_average': 1.2,
+                'ideal': 1.5
+            },
+            'above_average': {
+                'ideal': 1.2
+            }
+        },
+        'lemon': {
+            'poor': {
+                'below_average': 1.0,
+                'average': 1.3,
+                'above_average': 1.6,
+                'ideal': 1.8
+            },
+            'below_average': {
+                'average': 1.1,
+                'above_average': 1.4,
+                'ideal': 1.7
+            },
+            'average': {
+                'above_average': 1.2,
+                'ideal': 1.5
+            },
+            'above_average': {
+                'ideal': 1.2
+            }
+        }
+        # Add adjustment factors for other crops in desert climate...
+    },
+    'Mediterranean': {
+        # Define adjustment factors for transitions in Mediterranean climate and different products...
+    },
+    'continental': {
+        # Define adjustment factors for transitions in continental climate and different products...
+    }
+}
+
+# Example: Accessing adjustment factor for moving from poor to below average in desert climate for dates
+desert_dates_poor_to_below_average_factor = adjustment_factors['desert']['dates']['poor']['below_average']
+print("Adjustment Factor (Desert, Dates, Poor to Below Average):", desert_dates_poor_to_below_average_factor)
+
+# Example: Accessing adjustment factor for moving from poor to below average in desert climate for lemon
+desert_lemon_poor_to_below_average_factor = adjustment_factors['desert']['lemon']['poor']['below_average']
+print("Adjustment Factor (Desert, Lemon, Poor to Below Average):", desert_lemon_poor_to_below_average_factor)
+
+
+
+
+__________________________________________________________________________________
+Determining the factors if we split products based on the most suitable weather
+__________________________________________________________________________________
+
+Wheat : Continental > Mediterranean > Desert
+Corn : Continental > Mediterranean > Desert
+Dates  Desert > Mediterranean > Continental
+Potatoes : Mediterranean > > Continental >Desert
+Tomatoes :Mediterranean > Desert > Continental
+Pepper : Desert > Mediterranean > Continental
+Aubergines : Desert > Mediterranean > Continental
+Onions : Continental > Mediterranean > Desert
+Carrots : Continental > Mediterranean > Desert
+Lemon: Mediterranean > Continental > Desert
+Olive: Mediterranean > Desert > Continental
+Apple: Continental > Mediterranean > Desert
+
+
