@@ -7,7 +7,7 @@ BEJAIA: {}
 BISKRA: {tomatoes, green pepper, dates, wheat, aubergine,olives}
 BECHAR: {}
 BLIDA: {Potatoes, green pepper, wheat, aubergine,lemons,apple,olives}
-BOUIRA: {Potatoes}
+BOUIRA: {Potatoes,wheat}
 TAMANRASSET: {}
 TEBESSA: {Potatoes, dates}
 TLEMCEN: {tomatoes,lemons,olives}
@@ -27,7 +27,7 @@ MEDEA: {apple}
 MOSTAGANEM: {tomatoes, green pepper, carrot, onion, aubergine,lemons,olives}
 M'SILA: {green pepper, carrot, aubergine}
 MASCARA: {onion,olives}
-OUARGLA: {green pepper}
+OUARGLA: {green pepper,wheat,dates}
 ORAN: {}
 EL-BAYADH: {corn, dates, onion, aubergine}
 ILLIZI: {}
