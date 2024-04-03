@@ -1,0 +1,48 @@
+1 ADRAR:{}
+2 CHLEF:{tomatoes,carrot,onion,lemons}
+3 LAGHOUAT:{olives}
+4 O.E.BOUAGHI:{carrot,onion}
+5 BATNA:{olives,apple}
+6 BEJAIA:{}
+7 BISKRA:{tomatoes,green pepper,aubergine,olives }
+8 BECHAR:{}
+9 BLIDA:{Potatoes,green pepper,aubergine,lemons,olives,apple}
+10 BOUIRA:{Potatoes}
+11 TAMANRASSET:{}
+12 TEBESSA:{Potatoes}
+13 TLEMCEN:{tomatoes,lemons,olives}
+14 TIARET:{Potatoes,onion,aubergine}
+15 TIZI-OUZOU:{lemons,apple}
+16 ALGER:{Potatoes,tomatoes,carrot,lemons,apple}
+17 DJELFA:{onion}
+18 JIJEL:{tomatoes,green pepper,onion,olives}
+19 SETIF:{green pepper}
+20 SAIDA:{carrot,onion,aubergine}
+21 SKIKDA:{carrot}
+22 S.B.ABBES:{olives}
+23 ANNABA:{Potatoes,lemons}
+24 GUELMA:{carrot}
+25 CONSTANTINE:{apple}
+26 MEDEA:{apple}
+27 MOSTAGANEM:{tomatoes,green pepper,carrot,onion,aubergine,lemons,olives}
+28 M'SILA:{green pepper,carrot,aubergine}
+29 MASCARA:{onion,olives}
+30 OUARGLA:{,green pepper}
+31 ORAN:{}
+32 EL-BAYADH:{onion,aubergine}
+33 ILLIZI:{}
+34 B.B.ARRERIDJ:{}
+35 BOUMERDES:{apple}
+36 EL-TARF:{Potatoes,lemons}
+37 TINDOUF:{tomatoes,green pepper,aubergine}
+38 TISSEMSILT:{}
+39 EL-OUED:{Potatoes,tomatoes,green pepper}
+40 KHENCHELA:{aubergine,apple}
+41 SOUK-AHRAS:{}
+42 TIPAZA:{tomatoes,green pepper,carrot,lemons,apple}
+43 MILA:{Potatoes,carrot,aubergine}
+44 AIN-DEFLA:{Potatoes,tomatoes,onion,apple}
+45 NAAMA:{}
+46 A.TEMOUCHENT:{}
+47 GHARDAIA:{}
+48 RELIZANE:{lemons,olives}
