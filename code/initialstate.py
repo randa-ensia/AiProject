@@ -1776,7 +1776,7 @@ state={
                 'Apple':{
                     'lands_surface':2406,
                     'production': 141550,
-                    'condition':'Poor',
+                    'condition':'Below average',
                     'productivity':100.0,
                 }
             },
