@@ -1,4 +1,11 @@
-state={
+"""
+This file can be used to automate error detection in the conditions data of the initial state
+
+to use it paste your part of code inside of the stateionnary 
+the output will be the wilaya of the error + the type of the error
+"""
+
+state = {
     'wilayas':{
        'ADRAR':{
             'Products':{
@@ -3932,4 +3939,107 @@ state={
         },
         }
 
-##
+"""
+state = {
+    'wilaya_1' = {
+        'Products' = {
+            p_1 = {
+                'productivity'
+                'condition'
+            }
+        }
+    }
+
+}
+"""
+
+
+
+for key in state['wilayas']: #here key is wilaya name
+    for value2 in state['wilayas'][key]['Products']: #here value2 are product names 
+        value = state['wilayas'][key]['Products'][value2]#value is the actual state
+
+        if value2 == "Wheat":
+            if value['productivity'] < 10:
+                if value['condition'] != 'Poor' and value['condition'] != 'NULL':
+                     print(key," EROOR WHEAT")
+            elif value['productivity'] >= 10 and value['productivity'] < 20:
+                 if value['condition'] != 'Below average':
+                      print(key," ERROR WHEAT")
+            elif value['productivity'] >= 20 and value['productivity'] < 35:
+                 if value['condition'] != 'Average':
+                      print(key," ERROR WHEAT")
+            elif value['productivity'] >= 35 and value['productivity'] < 50:
+                 if value['condition'] != 'Above average':
+                      print(key," ERROR WHEAT")
+            elif value['productivity'] >= 50:
+                 if value['condition'] != 'Ideal':
+                      print(key," ERROR WHEAT")
+##########################
+        if value2 == "Corn" or value2 == "Dates":
+            if value['productivity'] < 20:
+                if value['condition'] != 'Poor' and value['condition'] != 'NULL':
+                     print(key," ERROR CornDate")
+            elif value['productivity'] >= 20 and value['productivity'] < 40:
+                 if value['condition'] != 'Below average':
+                      print(key," ERROR CornDate")
+            elif value['productivity'] >= 40 and value['productivity'] < 60:
+                 if value['condition'] != 'Average':
+                      print(key," ERROR CornDate")
+            elif value['productivity'] >= 60 and value['productivity'] < 80:
+                 if value['condition'] != 'Above average':
+                      print(key," ERROR CornDate")
+            elif value['productivity'] >= 80:
+                 if value['condition'] != 'Ideal':
+                      print(key," ERROR CornDate")
+##########################
+        if value2 == "Potatoes" or value2 == "Greenpepper" or value2 == "Aubergines"or value2 == "Onions"or value2 == "Lemon"or value2 == "Apple":
+            if value['productivity'] < 100:
+                if value['condition'] != 'Poor' and value['condition'] != 'NULL':
+                     print(key,value2," ERROR potatoeGreenAUOnLemApp")
+            elif value['productivity'] >= 100 and value['productivity'] < 200:
+                 if value['condition'] != 'Below average':
+                      print(key,value2," ERROR potatoeGreenAUOnLemApp")
+            elif value['productivity'] >= 200 and value['productivity'] < 300:
+                 if value['condition'] != 'Average':
+                      print(key,value2," ERROR potatoeGreenAUOnLemApp")
+            elif value['productivity'] >= 300 and value['productivity'] < 400:
+                 if value['condition'] != 'Above average':
+                      print(key,value2," ERROR potatoeGreenAUOnLemApp")
+            elif value['productivity'] >= 400:
+                 if value['condition'] != 'Ideal':
+                      print(key,value2," ERROR potatoeGreenAUOnLemApp")
+##########################
+        if value2 == "Tomatoes" or value2 == "Carrots":
+            if value['productivity'] < 200:
+                if value['condition'] != 'Poor' and value['condition'] != 'NULL':
+                     print(key,value2," ERROR Carrots Tomatoes")
+            elif value['productivity'] >= 200 and value['productivity'] < 400:
+                 if value['condition'] != 'Below average':
+                      print(key,value2," ERROR Carrots Tomatoes")
+            elif value['productivity'] >= 400 and value['productivity'] < 600:
+                 if value['condition'] != 'Average':
+                      print(key,value2," ERROR Carrots Tomatoes")
+            elif value['productivity'] >= 600 and value['productivity'] < 800:
+                 if value['condition'] != 'Above average':
+                      print(key,value2," ERROR Carrots Tomatoes")
+            elif value['productivity'] >= 800:
+                 if value['condition'] != 'Ideal':
+                      print(key,value2," ERROR Carrots Tomatoes")
+##########################
+        if value2 == "Olive":
+            if value['productivity'] < 10:
+                if value['condition'] != 'Poor' and value['condition'] != 'NULL':
+                     print(key," ERROR Olives")
+            elif value['productivity'] >= 10 and value['productivity'] < 20:
+                 if value['condition'] != 'Below average':
+                      print(key," ERROR Olives")
+            elif value['productivity'] >= 20 and value['productivity'] < 40:
+                 if value['condition'] != 'Average':
+                      print(key," ERROR Olives")
+            elif value['productivity'] >= 40 and value['productivity'] < 60:
+                 if value['condition'] != 'Above average':
+                      print(key," ERROR Olives")
+            elif value['productivity'] >= 60:
+                 if value['condition'] != 'Ideal':
+                      print(key," ERROR Olives")
