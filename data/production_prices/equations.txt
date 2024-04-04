@@ -44,7 +44,7 @@ Price = -1,250,000 + 28.1x - 0.000272x^2+0.00000000015x^3-0.00000000000000524x^4
 
 The link :https://docs.google.com/spreadsheets/d/1tk-B26Ful6TXr36LTEX1XeZcXcSQxrzjIHgZVJ8yvDg/edit?usp=sharing
 
-Apple:
+Apple:quintal
 ------
 Price = 27.8 + 0.000448x - 0.000000000245x^2 + 0.000000000000000531x^3 -
  0.000000000000000000000378x^4
@@ -52,6 +52,15 @@ Price = 27.8 + 0.000448x - 0.000000000245x^2 + 0.000000000000000531x^3 -
 
 The link :https://docs.google.com/spreadsheets/d/1fAqxSOBD3ODJyRhpOFGTfVp5J7sq8y0As5EKrEBB69M/edit?usp=sharing
 
+wheat :quintal (but note that here r^2 was small )
+------
+Price :-8257 + 0.00569x - 0.00000000165x^2 + 0.000000000000000266x^3 -
+ 0.000000000000000000000265x^4 + 0.000000000000000000000000171x^5 -
+ 0.0000000000000000000000000726x^6 + 0.0000000000000000000000000202x^7 -
+ 0.0000000000000000000000000000354x^8 + 0.000000000000000000000000000000354x^9 -
+ 0.00000000000000000000000000000000154x^10
+
+link :https://docs.google.com/spreadsheets/d/1vu8Z2oCkywrGbHyufacAi0DnnspAqtBOPNx_cQkQoF4/edit#gid=645526319
 production is in qx for the bellow crops
 Dates:
 ------
