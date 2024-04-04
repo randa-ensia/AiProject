@@ -48,4 +48,43 @@ Apple:
 Price = 27.8 + 0.00448x - 0.0000000245x^2 + 0.000000000000531x^3 
 - 0.0000000000000000000378x^4
 
+
 The link :https://docs.google.com/spreadsheets/d/1fAqxSOBD3ODJyRhpOFGTfVp5J7sq8y0As5EKrEBB69M/edit?usp=sharing
+
+production is in qx for the bellow crops
+Dates:
+------
+Price = 303 - 0.000102x + 0.000000000022x^2 - 0.00000000000000000101x^3
+
+The link: https://docs.google.com/spreadsheets/d/1fc35pYWzBRMELLixJ_dnYF_IA3NUHgIiiEgO8AJqJ1A/edit#gid=0
+
+Pepper:
+-------
+Price = -9793 + 0.0232x - 0.0000000228x^2 + 0.000000000000123x^3 - 0.000000000000000000004x^4 + 0.0000000000000000000000801x^5 - 0.000000000000000000000000097x^6 + 0.000000000000000000000000000651x^7 - 0.0000000000000000000000000000186x^8
+
+The link: https://docs.google.com/spreadsheets/d/1TgOTqnK_jdycfPZvxfqqM-hbhI7t09agAMMsQ3qUvAQ/edit#gid=0
+
+Onions:
+-------
+Price = -210 + 0.268x - 0.000101x^2 + 0.0000000142x^3 - 0.000000000000275x^4
+
+The link: https://docs.google.com/spreadsheets/d/1uCCcitPLJf3-Jc2PURkJCTXRglFRPmveqvj8IaOwDC4/edit#gid=0
+
+Corn:
+-----
+Price = 17.6 + 0.000263x - 0.0000000125x^2 + 0.000000000000182x^3 - 0.000000000000000644x^4
+
+The link:https://docs.google.com/spreadsheets/d/1fc35pYWzBRMELLixJ_dnYF_IA3NUHgIiiEgO8AJqJ1A/edit#gid=0
+
+Eggplat:
+--------
+Price = 18103 - 0.153x + 0.000000553x^2 - 0.00000000000112x^3 + 0.00000000000000000137x^4 - 0.00000000000000000000105x^5 + 0.00000000000000000000000489x^6 - 0.0000000000000000000000000127x^7 + 0.00000000000000000000000000014x^8
+
+The link: https://docs.google.com/spreadsheets/d/1M-MEA8Nn1h29vs9ZSTXLca3LAntim07rqP6Ng7B4djo/edit#gid=0
+
+used resources: 
+for the production of all of the above: https://www.fao.org/faostat/en/#data/QCL
+for the prices of all products except corn and eggplant: https://www.fao.org/faostat/en/#data/QCL
+for the prices of the eggplant: https://www.ceicdata.com/en/algeria/average-price-of-food-products/average-price-of-product-fresh-vegetables-long-eggplant
+for the prices of corn: https://www.indexmundi.com/fr/matieres-premieres/?marchandise=mais&monnaie=dzd
+
