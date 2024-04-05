@@ -30,7 +30,16 @@ class Agriculture:
 
     def transition_model_function (self,state, actions):
         new_state = copy.deepcopy(state)
-        for action in actions 
+        for action in actions :
+            wilaya , product, condition , land = action 
+            wilaya_data = state['wilayas'][wilaya]
+            unused_land = state ['wilayas'][wilaya]['Land_data']
+            if unused_land >= land :
+                
+
+                
+                    
+
 transition_model = {
     'change conditions ':{
         'Wheat': {
