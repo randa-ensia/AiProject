@@ -28,14 +28,16 @@ class Agriculture:
         self.actions=actions
         self.path_cost=path_cost 
 
-    def transition_model_function (self,state, actions):
+    def transition_model_function (self,state, action):
         new_state = copy.deepcopy(state)
-        for action in actions :
-            wilaya , product, condition , land = action 
-            wilaya_data = state['wilayas'][wilaya]
-            unused_land = state ['wilayas'][wilaya]['Land_data']
-            if unused_land >= land :
-                
+        wilaya , product, condition , land = action 
+        wilaya_data = state['wilayas'][wilaya]
+        unused_land = state ['wilayas'][wilaya]['Land_data']['unused land']
+        if unused_land >= land :
+            state ['wilayas'][wilaya]['Products'][product]['land_surface'] += land*unused_land
+            state ['wilayas'][wilaya]['Products'][product]['productivity'] = transition_model['change conditions '][product][condition]
+            state ['wilayas'][wilaya]['Products'][product]['production'] = state ['wilayas'][wilaya]['Products'][product]['land_surface']*state ['wilayas'][wilaya]['Products'][product]['productivity']
+
 
                 
                     
