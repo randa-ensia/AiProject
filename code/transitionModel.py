@@ -64,46 +64,39 @@ transition_model = {
             'Ideal': random.uniform(400,500)
         },
         'Aubergines': {
-            'Poor': random.uniform (0,100),
-            'Below average': random.uniform (100,200),
-            'Average': random.uniform (200,300),
-            'Above Average': random.uniform (300,400),
-            'Ideal': 400
+            'Poor':random.uniform(0,100),
+            'Below average':random.uniform(100,200), 
+            'Average':random.uniform(200,300),
+            'Above Average':random.uniform(300,400),
+            'Ideal':random.uniform(400,600),
         },
         'Onions': {
-            'Poor': 5,
-            'Below average':100,
-            'Average':200, 
-            'Above Average':300, 
-            'Ideal': 400
+            'Poor':random.uniform(0,100), 
+            'Below average':random.uniform(100,200),
+            'Average':random.uniform(200,300),
+            'Above Average':random.uniform(300,400),
+            'Ideal':random.uniform(400,600)
         },
         'Carrots': {
-            'Poor': 5,
-            'Below average':200,
-            'Average':400, 
-            'Above Average':600, 
-            'Ideal': 800
+            'Poor':random.uniform(0,200), 
+            'Below average':random.uniform(200,400),
+            'Average':random.uniform(400,600),
+            'Above Average':random.uniform(600,800), 
+            'Ideal':random.uniform(800,1000)
         },
         'Lemon': {
-            'Poor': 2,
-            'Below average':100, 
-            'Average':200,
-            'Above Average':300, 
-            'Ideal': 400
-        },
-        'Olives': {
-            'Poor': 2,
-            'Below average':10, 
-            'Average':20, 
-            'Above Average':40, 
-            'Ideal': 60
+            'Poor':random.uniform(0,100), 
+            'Below average':random.uniform(100,200), 
+            'Average':random.uniform(200,300),
+            'Above Average':random.uniform(300,400),
+            'Ideal':random.uniform(400,500),
         },
         'Apples': {
-            'Poor': 2,
-            'Below average':100, 
-            'Average':200, 
-            'Above Average':300, 
-            'Ideal': 400
+            'Poor':random.uniform(0,100), 
+            'Below average':random.uniform(100,200),
+            'Average':random.uniform(200,300),
+            'Above Average':random.uniform(300,400),
+            'Ideal':random.uniform(400,500)
         }
 
     },
