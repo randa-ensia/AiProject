@@ -1,5 +1,6 @@
 import copy
 import random 
+import initialstate
 from random import choice
 from collections import deque
 class Node:
@@ -18,7 +19,18 @@ class Node:
         if  self.state == other.state :
             return True
         else :
-            return False 
+            return False
+class Agriculture:
+    def __init__(self, initial_state, goal_state, state_transition_model,path_cost=0,actions=""):
+        self.state = initial_state
+        self.goal_state = goal_state
+        self.state_transition_model = state_transition_model
+        self.actions=actions
+        self.path_cost=path_cost 
+
+    def transition_model_function (self,state, actions):
+        new_state = copy.deepcopy(state)
+        for action in actions 
 transition_model = {
     'change conditions ':{
         'Wheat': {
