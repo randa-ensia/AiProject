@@ -160,13 +160,13 @@ class Agriculture:
         #production = productivty * land surface
         new_state['wilayas'][wilaya]['Products'][product]['production'] = new_state['wilayas'][wilaya]['Products'][product]['productivity'] * new_state['wilayas'][wilaya]['Products'][product]['lands_surface']
 
-        new_state['prices'][product] = prices_production[product][new_state['wilayas'][wilaya]['Products'][product]['production']];
+        new_state['prices'][product] = prices_production[product]([new_state['wilayas'][wilaya]['Products'][product]['production']]);
 
         return new_state
     
     
     #def get_valid_actions:
 
-    
+
                     
 
