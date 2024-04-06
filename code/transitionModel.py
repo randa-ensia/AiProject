@@ -165,8 +165,19 @@ class Agriculture:
         return new_state
     
     
-    #def get_valid_actions:
+    def get_valid_actions(self,state):
+        valid_actions = []
 
+        # Iterate over each wilaya
+        for wilaya in self.state['wilayas']:
+            wilaya_data = self.state['wilayas'][wilaya]
+            available_land = wilaya_data['Land_data']['unused land']
+            total_surface = wilaya_data['Land_data']['unused land']+wilaya_data['Land_data']['culivated land']+wilaya_data['Land_data']['terre au repos']
+            for action in self.actions:
+                (wilaya,product,condition,land) = action
+                if available_land >= land* total_surface and state['wilayas'][wilaya][product]['production']> 0 :
+                    valid_actions.append(action)
+        return valid_actions
 
                     
 
