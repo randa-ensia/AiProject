@@ -4215,25 +4215,28 @@ state = {
     'Apple': {'average': 48479.1175, 'current': 48801.595}
     
     },
+    'consumption':{
+            'Wheat':106876192.9,
+            'Corn':53099798.8,
+            'Dates':10324946.9,
+            'Potatoes':51094196.9,
+            'Tomatoes':14777841.7,
+            'Greenpepper':3699496.7,
+            'Aubergines':258753.5,
+            'Onions':16131542.8,
+            'Carrots':4199064.8 ,
+            'Lemon':870153,
+            'Apple':5730370.8 
             
-            
-            }
+    }
+
+    
+    },
             
     
-consumption={
-                    'Wheat':106876192.9,
-                    'Corn':53099798.8,
-                    'Dates':10324946.9,
-                    'Potatoes':51094196.9,
-                    'Tomatoes':14777841.7,
-                    'Greenpepper':3699496.7,
-                    'Aubergines':258753.5,
-                    'Onions':16131542.8,
-                    'Carrots':4199064.8 ,
-                    'Lemon':870153,
-                    'Apple':5730370.8 
-                    
-    }
+            
+            
+    
 
 
 # Calculate total production of each product in the entire country
@@ -4248,10 +4251,11 @@ def calcTotalProduction(state):
         #     print(f"{product}: {production}")    
         return total_production
         
-def goal_test(consumption,state):
+def goal_test(state):
+    consumption = state['consumption']
     # Check for self-sufficiency
     total_production = calcTotalProduction(state)
-    for crop in consumption:
+    for crop in state['consumption'].items():
         if   total_production[crop]-consumption[crop] < 0:
             print("There is not self-sufficiency for", crop)
             return False  # Not self-sufficient for this crop
@@ -4276,7 +4280,7 @@ def goal_test(consumption,state):
 
 
 # Test the goal test function
-result = goal_test(consumption,state)
+result = goal_test(state)
 print("Goal test result:", result)
 
     
