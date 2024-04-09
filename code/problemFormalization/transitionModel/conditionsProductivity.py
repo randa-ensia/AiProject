@@ -43,7 +43,7 @@ map_condition_productivity  = {
             'above average':random.uniform (600,800), 
             'ideal': random.uniform(800,1000)
         },
-        'Green Pepper': {
+        'Greenpepper': {
             'poor': random.uniform (0,100),
             'below average': random.uniform (100,200),
             'average': random.uniform (200,300),
@@ -78,7 +78,7 @@ map_condition_productivity  = {
             'above average':random.uniform(300,400),
             'ideal':random.uniform(400,500),
         },
-        'Apples': {
+        'Apple': {
             'poor':random.uniform(0,100), 
             'below average':random.uniform(100,200),
             'average':random.uniform(200,300),

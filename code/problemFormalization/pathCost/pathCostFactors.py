@@ -59,6 +59,7 @@ adjustment_factors = {
                   }
      
     },
+
     
     'Medium Suitable': {
         'poor': {'below average': 1.3,
@@ -90,9 +91,11 @@ adjustment_factors = {
                    'below average':0.47,
                    'average': 0.5, 
                    'above average': 0.58
-                  }
+                  },
 
     },
+    
+
     'Low Suitable': {
       'poor': { 
                  'below average': 1.6,
@@ -245,3 +248,18 @@ fixed_factors = {
     'above average': 2.4, 
     'ideal': 2.8 
 }  
+
+#At first i thought about using a dictionary that has all the conditions and not only ideal 
+max_idealproductivity = {
+        'Wheat':90,
+        'Corn': 150 ,
+        'Dates':180,
+        'Potatoes': 500,
+        'Tomatoes': 1000 ,
+        'Greenpepper':500,
+        'Aubergines':600 ,
+        'Onions': 600,
+        'Carrots': 1000,
+        'Lemon':500,
+        'Apple': 500
+}

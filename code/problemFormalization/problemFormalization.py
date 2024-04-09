@@ -8,6 +8,8 @@ in the actions file
 
 from transitionModel import conditionsProductivity, prices
 from pathCost import pathCostHelper
+from pathCost import pathCostFactors
+from goalTest import goalTestHelper
 
 import copy
 import node as N
@@ -21,32 +23,9 @@ class agriculture:
               self.goal_test = goal_test
       
                
-       def goal_test(self,state):
-              consumption = state['consumption']
-    # Check for self-sufficiency
-              total_production = self.calcTotalProduction(state)
-              for crop in state['consumption'].items():
-                     if   total_production[crop]-consumption[crop] < 0:
-                            print("There is not self-sufficiency for", crop)
-                            return False  # Not self-sufficient for this crop
-                     else:
-                            print("There is a self-sufficiency for", crop)
+       def is_goal_test(self,state):
+              return self.goal_test(state)
             
-    
-    # Check for lowest price
-              for crop, details in state['prices'].items():
-                     average_price = details['average']
-                     current_price = details['current']
-
-        # Check if current price is within ±2% of the average price
-                     if not (0.98 * average_price <= current_price <= 1.02 * average_price):
-                            print("The price of", crop, "is not within ±2% of the average price")
-                            return False  # Current price is not within the range
-                     else:
-                            print("The price of", crop, "is within ±2% of the average price ")
-                            print("so  lowest price of ", crop, "is ",current_price ,'DA')
-
-              return True
 
        def expand_node(self, node):#NOT TESTED
               state = node.state
@@ -57,43 +36,46 @@ class agriculture:
                      child_node = N.Node(child_state, parent=node, action=action, cost=node.cost + self.path_cost(node.state,action))
                      child_nodes.append(child_node)
               return child_nodes
-       
+       #didn't check it logic
+       def heuristic(self, state):
 
+              total_cost = 0
+              #Define a dectionary to keep track fo the products total production across different wilayas first initialised to 0
+              total_production = {product: 0 for product in pathCostFactors.max_idealproductivity} 
+              for wilaya, data in state['wilayas'].items():
+                     for product, details in data['Products'].items():
+                            total_production[product]+=details['production']
+              #for each product find the cost and add it to total
+              for product,details in total_production.items():
+                     total_cost+=self.product_cost(product, total_production[product], self.initial_state['consumption'][product]) #I assumed that the consumption in a dictionary
+    
+              return total_cost
 
        ###helper functions####
-       #remove the actions that leads to the same state
-       def get_valid_actions(self,state):#NOT TESTED
+       def get_valid_actions(self,state):#TESTED
               """
               this is a helper function to be used inside of the expand node to get all the possible actions then
               applying them
               """
               valid_actions = []
-
-        # Iterate over each wilaya
-              for wilaya in self.state['wilayas']:
-                     wilaya_data = self.state['wilayas'][wilaya]
+              for action in self.actions:
+                     (wilaya,product,condition,land) = action
+                     wilaya_data = state['wilayas'][wilaya]
                      available_land = wilaya_data['Land_data']['unused land']
-                     total_surface = wilaya_data['Land_data']['unused land']+wilaya_data['Land_data']['culivated land']+wilaya_data['Land_data']['terre au repos']
-                     for action in self.actions:
-                            (wilaya,product,_,land) = action
-                            if available_land >= land* total_surface and state['wilayas'][wilaya][product]['production']> 0 :
-                                   valid_actions.append(action)
+                     total_surface = available_land + wilaya_data['Land_data']['cultivated land'] + wilaya_data['Land_data']['terre_au_repo']
+                     if available_land >= land * total_surface and state['wilayas'][wilaya]['Products'][product]['production']> 0 and land!=0 and condition != state['wilayas'][wilaya]['Products'][product]['condition']:
+                            valid_actions.append(action)
+              #print(valid_actions)
               return valid_actions
-       # Calculate total production of each product in the entire country
-       def calcTotalProduction(state):
-        total_production = {product: 0 for product in state['wilayas']['ADRAR']['Products']}#it is a dict of production for all the products
-        for wilaya in state['wilayas'].values():
-            for product, details in wilaya['Products'].items():#looping over the products of each wilaya
-                total_production[product] += details['production']#calculate the total production of a product for all wilayas
-                
-        # print("Total production of each product:") ==> this is for testing !
-        # for product, production in total_production.items():
-        #     print(f"{product}: {production}")    
-        return total_production
+       
+       def product_cost(self,product,production,consumption):#I didn't check its logic
+              return (consumption-production)/pathCostFactors.max_idealproductivity[product]*pathCostFactors.cost_per_hec[product]*pathCostFactors.fixed_factors['ideal']
+
+
 
 
 #the path cost function
-def step_cost(state,action):#this function was tested
+def step_cost(state,action):#TESTED
        """
        This function calculates the cost of going from one step to an other
        it takes the state and the actions we want to calculate its cost as a parameter
@@ -103,7 +85,7 @@ def step_cost(state,action):#this function was tested
 
 
 #the transition model
-def transition_model_function (state, action): #this function was tested
+def transition_model_function (state, action): #TESTED
     """
     This function takes a state and an action as parameters and returns the state that will result from applying
     that action
@@ -112,6 +94,7 @@ def transition_model_function (state, action): #this function was tested
 
     resulting_state = copy.deepcopy(state) #the new state that we are going to apply the action to and return 
     (wilaya,product,condition,land) = action 
+    #print(action)
 
     #total surface = unused surface + cultivated surface + terre en repo surface
     total_surface = resulting_state['wilayas'][wilaya]['Land_data']['unused land'] + resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] + resulting_state['wilayas'][wilaya]['Land_data']['terre_au_repo']
@@ -134,8 +117,46 @@ def transition_model_function (state, action): #this function was tested
     #production = productivty * land surface
     resulting_state['wilayas'][wilaya]['Products'][product]['production'] = resulting_state['wilayas'][wilaya]['Products'][product]['productivity'] * resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface']
 
+    #changing the cost
+    resulting_state['wilayas'][wilaya]['Products'][product]['cost'] = resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface'] * pathCostFactors.cost_per_hec[product]
+
     #calculating the new price of the crop according to the changement of the production
-    resulting_state['prices'][product] = prices.prices_production[product](resulting_state['wilayas'][wilaya]['Products'][product]['production'])
+    resulting_state['prices'][product]['current'] = prices.prices_production[product](resulting_state['wilayas'][wilaya]['Products'][product]['production'])
 
     return resulting_state
+
+#goal test function
+def goal_test(state):
+       is_self_suff = True;
+       consumption = state['consumption']
+    # Check for self-sufficienc
+       total_production = goalTestHelper.calcTotalProduction(state)
+       for crop in state['consumption']:
+              #print(crop,total_production[crop]-consumption[crop])
+              #print('crop',crop) debugiing purposes
+              if   total_production[crop]-consumption[crop] < -5000:
+                     print("There is not self-sufficiency for", crop)
+                     is_self_suff = False
+                     #return False  # Not self-sufficient for this crop
+              #else:
+                     #print("There is a self-sufficiency for", crop)
+                     #return True
+            
+    
+    # Check for lowest price
+       #for crop, details in state['prices'].items():
+              #average_price = details['average']
+              #current_price = details['current']
+
+        # Check if current price is within ±2% of the average price
+              #if not (0.85 * average_price <= current_price <= 1.15 * average_price):
+                     #print("The price of", crop, "is not within ±2% of the average price")
+                     #return False  # Current price is not within the range
+              #else:
+                     #print("The price of", crop, "is within ±2% of the average price ")
+                     #print("so  lowest price of ", crop, "is ",current_price ,'DA')
+
+
+       return is_self_suff
+#
     
