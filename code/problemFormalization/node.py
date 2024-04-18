@@ -1,10 +1,12 @@
+import types
+
 class Node:
-    def __init__(self, state, parent=None, action=None, cost=0, total_cost = 0):
+    def __init__(self, state, parent=None, action=None, cost=0, evaluation_function = 0):
         self.state = state
         self.parent = parent
         self.action = action
         self.cost = cost
-        self.total_cost = total_cost
+        self.evaluation_function = evaluation_function
         if parent is None:
             self.depth = 0
         else:
@@ -12,7 +14,7 @@ class Node:
 
 
     def __hash__(self):
-        return self.state
+        return hash(tuple(map(tuple,self.state)))
         #print(type(hashable))
     
     def __str__(self):
@@ -22,4 +24,4 @@ class Node:
         return self.state == other.state
 
     def __lt__(self, other):
-        return self.cost < other.cost
+        return self.evaluation_function < other.evaluation_function

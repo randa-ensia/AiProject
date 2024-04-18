@@ -42,7 +42,7 @@ class agriculture:
               total_cost = 0
               #Define a dectionary to keep track fo the products total production across different wilayas first initialised to 0
               total_production = {product: 0 for product in pathCostFactors.max_idealproductivity} 
-              for wilaya, data in state['wilayas'].items():
+              for _, data in state['wilayas'].items():
                      for product, details in data['Products'].items():
                             total_production[product]+=details['production']
               #for each product find the cost and add it to total
@@ -135,7 +135,7 @@ def goal_test(state):
               #print(crop,total_production[crop]-consumption[crop])
               #print('crop',crop) debugiing purposes
               if   total_production[crop]-consumption[crop] < -5000:
-                     print("There is not self-sufficiency for", crop)
+                     #print("There is not self-sufficiency for", crop)
                      is_self_suff = False
                      #return False  # Not self-sufficient for this crop
               #else:
