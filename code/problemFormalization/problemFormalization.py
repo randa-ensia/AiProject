@@ -37,14 +37,16 @@ class agriculture:
                      child_nodes.append(child_node)
               return child_nodes
        #didn't check it logic
-       def heuristic(self, state):
-
+       def heuristic(self, node):
+              state = node.state
               total_cost = 0
               #Define a dectionary to keep track fo the products total production across different wilayas first initialised to 0
               total_production = state["total_production"]
               #for each product find the cost and add it to total
               for product,_ in total_production.items():
-                     total_cost+=self.product_cost(product, total_production[product], self.initial_state['consumption'][product]) #I assumed that the consumption in a dictionary
+                     add = self.product_cost(product, total_production[product], self.initial_state['consumption'][product])
+                     if add > 0:
+                            total_cost+=add
     
               return total_cost
 
@@ -162,7 +164,7 @@ def goal_test(state):
        for crop in state['consumption']:
               #print(crop,total_production[crop]-consumption[crop])
               #print('crop',crop) debugiing purposes
-              if   total_production[crop]-consumption[crop] < -50000:
+              if   total_production[crop]-consumption[crop] < 0:
                      print("There is not self-sufficiency for", crop)
                      is_self_suff = False
                      #return False  # Not self-sufficient for this crop
@@ -170,21 +172,21 @@ def goal_test(state):
                      print("There is a self-sufficiency for", crop)
                      #return True
             
-    
+       #is_price_low = True
     # Check for lowest price
        #for crop, details in state['prices'].items():
               #average_price = details['average']
               #current_price = details['current']
 
         # Check if current price is within ±2% of the average price
-              #if not (0.85 * average_price <= current_price <= 1.15 * average_price):
-                     #print("The price of", crop, "is not within ±2% of the average price")
-                     #return False  # Current price is not within the range
+              #if not (0.9 * average_price <= current_price <= 1.1 * average_price):
+              #       print("The price of", crop, "is not within ±10% of the average price")
+              #       is_price_low = False  # Current price is not within the range
               #else:
-                     #print("The price of", crop, "is within ±2% of the average price ")
-                     #print("so  lowest price of ", crop, "is ",current_price ,'DA')
+              #       print("The price of", crop, "is within ±2% of the average price ")
+              #       print("so  lowest price of ", crop, "is ",current_price ,'DA')
 
 
-       return is_self_suff
+       return is_self_suff #and is_price_low
 #
     

@@ -15,5 +15,5 @@ object = pF.agriculture(init.state,actions.ACTIONS,pF.transition_model_function,
 the goal test function of rania should be passes as a parameter and we should add a function that checks it for the nodes
 """
 
-print(algorithms.SearchStrategies(object));
+print(algorithms.SearchStrategies(object,"SAHC"));
 
