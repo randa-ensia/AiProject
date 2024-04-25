@@ -2,9 +2,9 @@ import problemFormalization as pF
 import initialstate as init
 from actions import actions
 import algorithms
-from queue import PriorityQueue
+from queue import Queue
 
-myQ = PriorityQueue()
+myQ =Queue()
 
 object = pF.agriculture(init.state,actions.ACTIONS,pF.transition_model_function,pF.step_cost,pF.goal_test);
 
@@ -15,5 +15,5 @@ object = pF.agriculture(init.state,actions.ACTIONS,pF.transition_model_function,
 the goal test function of rania should be passes as a parameter and we should add a function that checks it for the nodes
 """
 
-print(algorithms.SearchStrategies(object,False,False,float('inf'),myQ,'UCS'));
+print(algorithms.SearchStrategies(object));
 

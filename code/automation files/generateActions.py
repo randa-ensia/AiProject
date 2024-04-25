@@ -1,30 +1,92 @@
-conditions = ['above average','ideal'];
+"""
 
-products = ['Wheat','Corn'];
+all the comibnitions "condition, wilaya,product"
+
+for _ condition:
+    for _ wilayas:
+        for _ products of that wilaya:     
+                
+
+            _ _ _ :
+
+            {
+            addra: []
+            }
+
+"""
+
+conditions = ['poor','average','ideal'];
+
+products = ['Wheat','Corn','Dates','Potatoes','Tomatoes','Greenpepper','Aubergines'];
 
 wilayas = [
-    "ADRAR", "CHLEF", "LAGHOUAT", "O.E.BOUAGHI", "BATNA", "BEJAIA", "BISKRA", "BECHAR", 
-    "BLIDA", "BOUIRA", "TAMANRASSET", "TEBESSA", "TLEMCEN", "TIARET", "TIZI-OUZOU", "ALGER", 
+    "ADRAR", "CHLEF", "LAGHOUAT", "O.E.BOUAGHI", "BATNA", "BISKRA",  
+    "BLIDA", "BOUIRA",  "TEBESSA", "TLEMCEN", "TIARET", "ALGER", 
     "DJELFA", "JIJEL", "SETIF", "SAIDA", "SKIKDA", "S.B.ABBES", "ANNABA", "GUELMA", 
-    "CONSTANTINE", "MEDEA", "MOSTAGANEM", "MSILA", "MASCARA", "OUARGLA", "ORAN", 
-    "EL-BAYADH", "ILLIZI", "B.B.ARRERIDJ", "BOUMERDES", "EL-TARF", "TINDOUF", 
-    "TISSEMSILT", "EL-OUED", "KHENCHELA", "SOUK-AHRAS", "TIPAZA", "MILA", "AIN-DEFLA", 
-    "NAAMA", "A.TEMOUCHENT", "GHARDAIA", "RELIZANE"]
+    "CONSTANTINE", "MOSTAGANEM", "MSILA",  "OUARGLA", 
+    "EL-BAYADH", "EL-TARF", "TINDOUF", 
+     "EL-OUED", "KHENCHELA",  "TIPAZA", "MILA", "AIN-DEFLA", 
+    "GHARDAIA"]
 
-ranges = [0.5];
+algerian_crops = {
+    "ADRAR": ["Corn", "Wheat"],
+    "CHLEF": ["Tomatoes"            ],
+    "LAGHOUAT": ["Dates", "Wheat"  ],
+    "O.E.BOUAGHI": ["Corn"         ],
+    "BATNA": ["Dates"       ],
 
-LIST = ["wilaya","product","condition",0];
-large = list();
-print(LIST);
-for i in wilayas:
-    for j in products:
-        for e in conditions:
-            for r in ranges:
-                LIST[0] = i;
-                LIST[1] = j;
-                LIST[2] = e;
-                LIST[3] = r;
-                print(LIST,',');
+    "BISKRA": ["Tomatoes", "Greenpepper", "Dates", "Wheat", "Aubergine"  ],
+
+    "BLIDA": ["Potatoes", "Greenpepper", "Wheat", "Aubergine"          ],
+    "BOUIRA": ["Potatoes", "Wheat"],
+  
+    "TEBESSA": ["Potatoes", "Dates"],
+    "TLEMCEN": ["Tomatoes"     ],
+    "TIARET": ["Potatoes"    , "Aubergine"],
+
+    "ALGER": ["Potatoes", "Tomatoes"             ],
+    "DJELFA": ["Dates"    ],
+    "JIJEL": ["Tomatoes", "Greenpepper", "Corn"      ],
+    "SETIF": ["Greenpepper"],
+    "SAIDA": ["Aubergine"],
+    "SKIKDA": ["Corn" ],
+    "S.B.ABBES": ["Corn"  ],
+    "ANNABA": ["Potatoes", "Wheat"   ],
+    "GUELMA": ["Wheat"     ],
+    "CONSTANTINE": ["Wheat"     ],
+
+    "MOSTAGANEM": ["Tomatoes", "Greenpepper"         , "Aubergine"     ],
+    "M'SILA": ["Greenpepper"     , "Aubergine"],
+   
+    "OUARGLA": ["Greenpepper", "Wheat", "Dates"],
+
+    "EL-BAYADH": ["Corn", "Dates"    , "Aubergine"],
+
+
+  
+    "EL-TARF": ["Potatoes"   ],
+    "TINDOUF": ["Tomatoes", "Greenpepper", "Aubergine"],
+
+    "EL-OUED": ["Potatoes", "Tomatoes", "Greenpepper", "Dates"],
+    "KHENCHELA": ["Dates", "Aubergine"     ],
+
+    "TIPAZA": ["Tomatoes", "Greenpepper"             ],
+    "MILA": ["Potatoes", "Wheat"     , "Aubergine"],
+    "AIN-DEFLA": ["Potatoes", "Tomatoes"         ],
+
+    "GHARDAIA": ["Dates"],
+
+}
+
+for city, product in algerian_crops.items():
+    for crop in product:
+        for c in conditions:
+            print('["',crop,'",','"',c,'",','"',city,'"],');
+
+        
+
+
+
 
 
                 

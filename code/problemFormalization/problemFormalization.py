@@ -6,7 +6,7 @@ besmala used the transition model with conditions in lower cases , don't forget 
 in the actions file
 """
 
-from transitionModel import conditionsProductivity, prices
+from transitionModel import conditionsProductivity, prices, getProductsOfWilaya
 from pathCost import pathCostHelper
 from pathCost import pathCostFactors
 from goalTest import goalTestHelper
@@ -41,12 +41,9 @@ class agriculture:
 
               total_cost = 0
               #Define a dectionary to keep track fo the products total production across different wilayas first initialised to 0
-              total_production = {product: 0 for product in pathCostFactors.max_idealproductivity} 
-              for _, data in state['wilayas'].items():
-                     for product, details in data['Products'].items():
-                            total_production[product]+=details['production']
+              total_production = state["total_production"]
               #for each product find the cost and add it to total
-              for product,details in total_production.items():
+              for product,_ in total_production.items():
                      total_cost+=self.product_cost(product, total_production[product], self.initial_state['consumption'][product]) #I assumed that the consumption in a dictionary
     
               return total_cost
@@ -59,11 +56,12 @@ class agriculture:
               """
               valid_actions = []
               for action in self.actions:
-                     (wilaya,product,condition,land) = action
+                     (product,_,wilaya) = action
+
                      wilaya_data = state['wilayas'][wilaya]
                      available_land = wilaya_data['Land_data']['unused land']
-                     total_surface = available_land + wilaya_data['Land_data']['cultivated land'] + wilaya_data['Land_data']['terre_au_repo']
-                     if available_land >= land * total_surface and state['wilayas'][wilaya]['Products'][product]['production']> 0 and land!=0 and condition != state['wilayas'][wilaya]['Products'][product]['condition']:
+
+                     if available_land > 0 and state["consumption"][product] - state["total_production"][product] > 0:
                             valid_actions.append(action)
               #print(valid_actions)
               return valid_actions
@@ -81,8 +79,10 @@ def step_cost(state,action):#TESTED
        it takes the state and the actions we want to calculate its cost as a parameter
        it will be used in the expand node function to determine the path costs of each node
        """
-       return pathCostHelper.calculate_condition_change_cost(action,state) + pathCostHelper.calculate_land_change_cost(action,state)
 
+       cost = pathCostHelper.calculate_condition_change_cost(action,state) + pathCostHelper.calculate_land_change_cost(action,state) 
+
+       return cost / state["total_production"][action[0]]
 
 #the transition model
 def transition_model_function (state, action): #TESTED
@@ -93,28 +93,53 @@ def transition_model_function (state, action): #TESTED
     """
 
     resulting_state = copy.deepcopy(state) #the new state that we are going to apply the action to and return 
-    (wilaya,product,condition,land) = action 
-    #print(action)
+    (product,condition,wilaya) = action 
+    #product,condition ,wilaya
+    #print(action) productivoty (if I changed condition, production , surface maghroussa, unsed land)
 
     #total surface = unused surface + cultivated surface + terre en repo surface
-    total_surface = resulting_state['wilayas'][wilaya]['Land_data']['unused land'] + resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] + resulting_state['wilayas'][wilaya]['Land_data']['terre_au_repo']
+    #total_surface = resulting_state['wilayas'][wilaya]['Land_data']['unused land'] + resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] + resulting_state['wilayas'][wilaya]['Land_data']['terre_au_repo']
 
     #unused land = unused land - total_surface * percentage
-    resulting_state['wilayas'][wilaya]['Land_data']['unused land'] = resulting_state['wilayas'][wilaya]['Land_data']['unused land'] - land* total_surface
+
+    #
+
+    #I calculate the ratio between the need of a product and the sum of the needs of all products in the wilaya
+
+    need_of_product = resulting_state["consumption"][product] - resulting_state["total_production"][product]
+    need_all_products_wilaya = 0 
+
+
+    for p in getProductsOfWilaya.algerian_crops[wilaya]:
+           diffrence = resulting_state["consumption"][p] - resulting_state["total_production"][p]
+           if diffrence > 0 :
+              need_all_products_wilaya  = need_all_products_wilaya  + diffrence
+    ratio = need_of_product / need_all_products_wilaya
+
+    #calculate how much land will I cultivate
+    cultivated_land_product = ratio*resulting_state['wilayas'][wilaya]['Land_data']['unused land']
+
+
+    #the land surface
+    resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface'] = resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface'] + cultivated_land_product
+
+    #the unsed land
+    resulting_state['wilayas'][wilaya]['Land_data']['unused land'] = resulting_state['wilayas'][wilaya]['Land_data']['unused land'] - cultivated_land_product
+
 
     #cultivated land = cultivated land + total_surface * percentage
-    resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] = resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] + land* total_surface
+    resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] = resulting_state['wilayas'][wilaya]['Land_data']['cultivated land'] + cultivated_land_product
 
     #assigning the new condition to the state
     resulting_state['wilayas'][wilaya]['Products'][product]['condition'] = condition
 
-    #calculating the productivity using the condutions and assigning it
+    #calculating the productivity using the conditions and assigning it
     resulting_state['wilayas'][wilaya]['Products'][product]['productivity'] = conditionsProductivity.map_condition_productivity[product][condition]
 
-    #the new surface used to plant the crop
-    resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface'] = resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface'] + total_surface*land
+
 
     #production = productivty * land surface
+    old_production = resulting_state['wilayas'][wilaya]['Products'][product]['production']
     resulting_state['wilayas'][wilaya]['Products'][product]['production'] = resulting_state['wilayas'][wilaya]['Products'][product]['productivity'] * resulting_state['wilayas'][wilaya]['Products'][product]['lands_surface']
 
     #changing the cost
@@ -123,6 +148,9 @@ def transition_model_function (state, action): #TESTED
     #calculating the new price of the crop according to the changement of the production
     resulting_state['prices'][product]['current'] = prices.prices_production[product](resulting_state['wilayas'][wilaya]['Products'][product]['production'])
 
+    #calculating new production
+    resulting_state['total_production'][product] = resulting_state['total_production'][product] - old_production + resulting_state['wilayas'][wilaya]['Products'][product]['production']
+
     return resulting_state
 
 #goal test function
@@ -130,16 +158,16 @@ def goal_test(state):
        is_self_suff = True;
        consumption = state['consumption']
     # Check for self-sufficienc
-       total_production = goalTestHelper.calcTotalProduction(state)
+       total_production = state['total_production']
        for crop in state['consumption']:
               #print(crop,total_production[crop]-consumption[crop])
               #print('crop',crop) debugiing purposes
-              if   total_production[crop]-consumption[crop] < -5000:
-                     #print("There is not self-sufficiency for", crop)
+              if   total_production[crop]-consumption[crop] < -50000:
+                     print("There is not self-sufficiency for", crop)
                      is_self_suff = False
                      #return False  # Not self-sufficient for this crop
-              #else:
-                     #print("There is a self-sufficiency for", crop)
+              else:
+                     print("There is a self-sufficiency for", crop)
                      #return True
             
     

@@ -3189,38 +3189,7 @@ state = {
                         'condition': 'ideal',
                         'productivity': 2500.0,
                         'cost':0,
-                    },
-                    'Onions': {
-                    'lands_surface': 9,
-                    'production': 1955,
-                    'condition': 'average',
-                    'productivity': 230.0,
-                    'cost':47763,
-                    },
-                    'Carrots': {
-                        'lands_surface': 3,
-                        'production': 813,
-                        'condition': 'below average',
-                        'productivity': 250.0,
-                        'cost':36054,
-                    },
-                    'Lemon': {
-                        'lands_surface': 0,
-                        'production': 0,
-                        'condition': 'poor',
-                        'productivity': 0.0,
-                        'cost':0,
-                    },
-                    
-                    'Apple': {
-                        'lands_surface': 0,
-                        'production': 0,
-                        'condition': 'poor',
-                        'productivity': 0.0,
-                        'cost':0,
-                        
-                    }
-    
+                    }   
                 },
                 'Land_data':{
                     'cultivated land':805,
@@ -3279,35 +3248,7 @@ state = {
                         'productivity':0,
                         'cost':0,
                     },
-                    'Onions': {
-                        'lands_surface': 263,
-                        'production': 70180,
-                        'condition': 'average',
-                        'productivity': 266.8,
-                        'cost':1395741,
-                    },
-                    'Carrots': {
-                        'lands_surface': 15,
-                        'production': 833,
-                        'condition': 'poor',
-                        'productivity': 57.4,
-                        'cost':180270,
-                    },
-                    'Lemon': {
-                                'lands_surface': 0,
-                                'production': 0,
-                                'condition': 'poor',
-                                'productivity': 0.0,
-                                'cost':0,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 1232,
-                                'production': 66886,
-                                'condition': 'poor',
-                                'productivity': 54.3,
-                                'cost':18480000,
-                    }
+
     
                     
                 },
@@ -3368,35 +3309,7 @@ state = {
                         'productivity': 254.5,
                         'cost':1887500,
                     },
-                    'Onions': {
-                        'lands_surface': 2000,
-                        'production': 600000,
-                        'condition': 'above average',
-                        'productivity': 300.0,
-                        'cost':10614000,
-                    },
-                    'Carrots':{
-                        'lands_surface':648,
-                        'production': 74607,
-                        'condition':'poor',
-                        'productivity':115.2,
-                        'cost':8364528,
-                    },
-                    'Lemon':{
-                        'lands_surface':0,
-                        'production': 0,
-                        'condition':'poor',
-                        'productivity':0,
-                        'cost':150000,
-                    },
-                    
-                    'Apple':{
-                        'lands_surface':268,
-                        'production': 16160,
-                        'condition':'poor',
-                        'productivity':61.0,
-                        'cost':4020000,
-                    }
+
                 },
                 'Land_data':{
                     'cultivated land':89176,
@@ -3456,35 +3369,7 @@ state = {
                         'productivity': 400.0,
                         'cost':125000,
                     },
-                    'Onions': {
-                        'lands_surface': 282,
-                        'production': 46740,
-                        'condition': 'below average',
-                        'productivity': 166.0,
-                        'cost':1496574,
-                    },
-                    'Carrots': {
-                                'lands_surface': 442,
-                                'production': 68083,
-                                'condition': 'poor',
-                                'productivity': 154.0,
-                                'cost':5311956,
-                    },
-                    'Lemon': {
-                                'lands_surface': 0,
-                                'production': 0,
-                                'condition': 'poor',
-                                'productivity': 0.0,
-                                'cost':0,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 5485,
-                                'production': 1466355,
-                                'condition': 'above average',
-                                'productivity': 346.7,
-                                'cost':82275000,
-                    }
+
     
                 },
                 'Land_data':{
@@ -3544,35 +3429,8 @@ state = {
                         'productivity': 25.5,
                         'cost':162500,
                     },
-                    'Onions': {
-                        'lands_surface': 1200,
-                        'production': 176882,
-                        'condition': 'below average',
-                        'productivity': 147.4,
-                        'cost':6368400,
-                    },
-                    'Carrots': {
-                                'lands_surface': 10,
-                                'production': 400,
-                                'condition': 'poor',
-                                'productivity': 40.0,
-                                'cost':120180,
-                    },
-                    'Lemon': {
-                                'lands_surface': 0,
-                                'production': 0,
-                                'condition': 'poor',
-                                'productivity': 0.0,
-                                'cost':0,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 444,
-                                'production': 24336,
-                                'condition': 'poor',
-                                'productivity': 56.5,
-                                'cost':6660000,
-                    }
+
+
     
                 },
                 'Land_data':{
@@ -3632,35 +3490,8 @@ state = {
                         'productivity': 313.1,
                         'cost':5737500,
                     },
-                    'Onions': {
-                        'lands_surface': 656,
-                        'production': 180949,
-                        'condition': 'average',
-                        'productivity': 275.8,
-                        'cost':3481392,
-        },
-                    'Carrots': {
-                                'lands_surface': 281,
-                                'production': 119870,
-                                'condition': 'average',
-                                'productivity': 426.6,
-                                'cost':3377058
-                    },
-                    'Lemon': {
-                                'lands_surface': 476,
-                                'production': 97121,
-                                'condition': 'average',
-                                'productivity': 262.8,
-                                'cost':4760000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 727,
-                                'production': 169935,
-                                'condition': 'average',
-                                'productivity': 250.8,
-                                'cost':10905000,
-                    }
+
+
     
                 },
                 'Land_data':{
@@ -3706,13 +3537,7 @@ state = {
                         'productivity': 341.2,
                         'cost':1037400,
                     },
-                    'Onions': {
-                        'lands_surface': 440,
-                        'production': 122520,
-                        'condition': 'average',
-                        'productivity': 278.5,
-                        'cost':2335080,
-                    },
+
                     'Greenpepper': {
                         'lands_surface': 122,
                         'production': 34436,
@@ -3726,28 +3551,6 @@ state = {
                         'condition': 'ideal',
                         'productivity': 424.1,
                         'cost':212500,
-                    },
-                    'Carrots': {
-                                'lands_surface': 783,
-                                'production': 261928,
-                                'condition': 'below average',
-                                'productivity': 334.5,
-                                'cost':9410094,
-                    },
-                    'Lemon': {
-                                'lands_surface': 5,
-                                'production': 0,
-                                'condition': 'poor',
-                                'productivity': 0.0,
-                                'cost':50000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 619,
-                                'production': 47880,
-                                'condition': 'poor',
-                                'productivity': 82.8,
-                                'cost':9285000,
                     }
     
                 },
@@ -3795,13 +3598,6 @@ state = {
                         'productivity': 861.8,
                         'cost':2939300,
                     },
-                    'Onions': {
-                        'lands_surface': 1860,
-                        'production': 1162040,
-                        'condition': 'ideal',
-                        'productivity': 624.8,
-                        'cost':9871020,
-                    },
                     'Greenpepper': {
                         'lands_surface': 101,
                         'production': 13580,
@@ -3817,28 +3613,7 @@ state = {
                         'cost':700000,
                     },
     
-                    'Carrots': {
-                                'lands_surface': 4,
-                                'production': 960,
-                                'condition': 'below average',
-                                'productivity': 240.0,
-                                'cost':48072,
-                    },
-                    'Lemon': {
-                                'lands_surface': 31,
-                                'production': 4325,
-                                'condition': 'below average',
-                                'productivity': 141.3,
-                                'cost':310000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 691,
-                                'production': 117799,
-                                'condition': 'below average',
-                                'productivity': 180.5,
-                                'cost':10365000,
-                    }
+
     
                 },
                 'Land_data':{
@@ -3884,13 +3659,6 @@ state = {
                         'productivity': 273.5,
                         'cost':370500,
                     },
-                    'Onions': {
-                        'lands_surface': 323,
-                        'production': 62479,
-                        'condition': 'below average',
-                        'productivity': 193.4,
-                        'cost':1714161,
-                    },
                     'Greenpepper': {
                         'lands_surface': 105,
                         'production': 9741,
@@ -3906,28 +3674,7 @@ state = {
                         'cost':887500,
                     },
     
-                    'Carrots': {
-                                'lands_surface': 274,
-                                'production': 45804,
-                                'condition': 'poor',
-                                'productivity': 167.5,
-                                'cost':3292932,
-                    },
-                    'Lemon': {
-                                'lands_surface': 1,
-                                'production': 25,
-                                'condition': 'poor',
-                                'productivity': 50.0,
-                                'cost':10000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 26,
-                                'production': 998,
-                                'condition': 'poor',
-                                'productivity': 41.6,
-                                'cost':390000,
-                    }
+
     
                 },
                 'Land_data':{
@@ -3973,13 +3720,7 @@ state = {
                         'productivity': 356.9,
                         'cost':4727580,
                     },
-                    'Onions': {
-                        'lands_surface': 1945,
-                        'production': 439790,
-                        'condition': 'average',
-                        'productivity': 226.1,
-                        'cost':10322115,
-                    },
+
                     'Greenpepper': {
                         'lands_surface': 281,
                         'production': 65444,
@@ -3994,28 +3735,7 @@ state = {
                         'productivity': 240.3,
                         'cost':1500000,
                     },
-                    'Carrots': {
-                                'lands_surface': 1283,
-                                'production': 274420,
-                                'condition': 'below average',
-                                'productivity': 213.9,
-                                'cost':15419094,
-                    },
-                    'Lemon': {
-                                'lands_surface': 2,
-                                'production': 185,
-                                'condition': 'below average',
-                                'productivity': 123.3,
-                                'cost':20000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 224,
-                                'production': 6502,
-                                'condition': 'poor',
-                                'productivity': 29.6,
-                                'cost':3360000,
-                    }
+
     
                 },
                 'Land_data':{
@@ -4062,13 +3782,7 @@ state = {
                         'productivity': 145.3,
                         'cost':148200,
                     },
-                    'Onions': {
-                        'lands_surface': 715,
-                        'production': 132400,
-                        'condition': 'below average',
-                        'productivity': 185.2,
-                        'cost':3794505,
-                    },
+
     
                     'Greenpepper': {
                         'lands_surface': 76,
@@ -4084,28 +3798,7 @@ state = {
                         'productivity': 209.9,
                         'cost':200000,
                     },
-                    'Carrots': {
-                                'lands_surface': 300,
-                                'production': 43480,
-                                'condition': 'poor',
-                                'productivity': 144.9,
-                                'cost':3605400,
-                    },
-                    'Lemon': {
-                                'lands_surface': 420,
-                                'production': 34440,
-                                'condition': 'below average',
-                                'productivity': 107.6,
-                                'cost':4200000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 251,
-                                'production': 10339,
-                                'condition': 'poor',
-                                'productivity': 49.0,
-                                'cost':3765000,
-                    }
+
     
                 },
                 'Land_data':{
@@ -4151,13 +3844,6 @@ state = {
                         'productivity': 314.8,
                         'cost':1521520,
                     },
-                    'Onions': {
-                        'lands_surface': 392,
-                        'production': 69970,
-                        'condition': 'below average',
-                        'productivity': 178.5,
-                        'cost':2080344,
-                    },
                     'Greenpepper': {
                         'lands_surface': 105,
                         'production': 13828,
@@ -4172,28 +3858,6 @@ state = {
                         'productivity': 131.2,
                         'cost':975000,
                     },
-                    'Carrots': {
-                                'lands_surface': 100,
-                                'production': 9300,
-                                'condition': 'poor',
-                                'productivity': 93.0,
-                                'cost':1201800,
-                    },
-                    'Lemon': {
-                                'lands_surface': 136,
-                                'production': 34600,
-                                'condition': 'average',
-                                'productivity': 254.4,
-                                'cost':1360000,
-                    },
-                    
-                    'Apple': {
-                                'lands_surface': 182,
-                                'production': 24491,
-                                'condition': 'below average',
-                                'productivity': 134.9,
-                                'cost':2730000,
-                    }
     
                 },
                 'Land_data':{
@@ -4212,12 +3876,7 @@ state = {
     'Potatoes': {'average': 63.39166667, 'current': 57.89166667},
     'Tomatoes': {'average': 109.8108333, 'current': 101.8108333},
     'Onions': {'average':802.7800001, 'current':729.8000001},
-    'Greenpepper': {'average': 114.5, 'current': 125},
-    'Aubergines': {'average': 83.045, 'current': 94.42},
-    'Carrots': {'average': 1426.581, 'current': 1570.842},
-    'Lemon': {'average': 3469.741666, 'current': 3600.485555},
-    'Apple': {'average': 48479.1175, 'current': 48801.595}
-    
+    'Greenpepper': {'average': 114.5, 'current': 125},    
     },
     
     'consumption':{
@@ -4228,11 +3887,17 @@ state = {
             'Tomatoes':14777841.7,
             'Greenpepper':3699496.7,
             'Aubergines':258753.5,
-            'Onions':16131542.8,
-            'Carrots':4199064.8 ,
-            'Lemon':870153,
-            'Apple':5730370.8 
             
+    },
+
+    'total_production':{
+        'Wheat':38768762,
+        'Corn':63683,
+        'Dates':11360249,
+        'Potatoes':50202499,
+        'Tomatoes':14778786,
+        'Greenpepper':3668857,
+        'Aubergines':1841457
     }
     
     }
