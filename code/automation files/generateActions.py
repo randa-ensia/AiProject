@@ -33,45 +33,45 @@ algerian_crops = {
     "CHLEF": ["Tomatoes"            ],
     "LAGHOUAT": ["Dates", "Wheat"  ],
     "O.E.BOUAGHI": ["Corn"         ],
-    "BATNA": ["Dates"       ],
+    "BATNA": ["Dates","Corn"       ],
 
-    "BISKRA": ["Tomatoes", "Greenpepper", "Dates", "Wheat", "Aubergine"  ],
-
-    "BLIDA": ["Potatoes", "Greenpepper", "Wheat", "Aubergine"          ],
+    "BISKRA": ["Tomatoes", "Greenpepper", "Dates", "Wheat", "Aubergines"  ],
+    "BECHAR": ["Corn"],
+    "BLIDA": ["Potatoes", "Greenpepper", "Wheat", "Aubergines"          ],
     "BOUIRA": ["Potatoes", "Wheat"],
-  
+    "TAMANRASSET":["Corn"],
     "TEBESSA": ["Potatoes", "Dates"],
     "TLEMCEN": ["Tomatoes"     ],
-    "TIARET": ["Potatoes"    , "Aubergine"],
+    "TIARET": ["Potatoes"    , "Aubergines"],
 
     "ALGER": ["Potatoes", "Tomatoes"             ],
     "DJELFA": ["Dates"    ],
     "JIJEL": ["Tomatoes", "Greenpepper", "Corn"      ],
     "SETIF": ["Greenpepper"],
-    "SAIDA": ["Aubergine"],
+    "SAIDA": ["Aubergines"],
     "SKIKDA": ["Corn" ],
     "S.B.ABBES": ["Corn"  ],
     "ANNABA": ["Potatoes", "Wheat"   ],
     "GUELMA": ["Wheat"     ],
     "CONSTANTINE": ["Wheat"     ],
-
-    "MOSTAGANEM": ["Tomatoes", "Greenpepper"         , "Aubergine"     ],
-    "M'SILA": ["Greenpepper"     , "Aubergine"],
+    "MEDEA":["Corn"],
+    "MOSTAGANEM": ["Tomatoes", "Greenpepper"         , "Aubergines"     ],
+    "MSILA": ["Greenpepper"     , "Aubergines"],
    
     "OUARGLA": ["Greenpepper", "Wheat", "Dates"],
 
-    "EL-BAYADH": ["Corn", "Dates"    , "Aubergine"],
+    "EL-BAYADH": ["Corn", "Dates"    , "Aubergines"],
 
 
   
     "EL-TARF": ["Potatoes"   ],
-    "TINDOUF": ["Tomatoes", "Greenpepper", "Aubergine"],
+    "TINDOUF": ["Tomatoes", "Greenpepper", "Aubergines"],
 
     "EL-OUED": ["Potatoes", "Tomatoes", "Greenpepper", "Dates"],
-    "KHENCHELA": ["Dates", "Aubergine"     ],
+    "KHENCHELA": ["Dates", "Aubergines"     ],
 
     "TIPAZA": ["Tomatoes", "Greenpepper"             ],
-    "MILA": ["Potatoes", "Wheat"     , "Aubergine"],
+    "MILA": ["Potatoes", "Wheat"     , "Aubergines"],
     "AIN-DEFLA": ["Potatoes", "Tomatoes"         ],
 
     "GHARDAIA": ["Dates"],

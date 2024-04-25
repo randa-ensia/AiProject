@@ -3892,7 +3892,7 @@ state = {
 
     'total_production':{
         'Wheat':38768762,
-        'Corn':63683,
+        'Corn':73683,
         'Dates':11360249,
         'Potatoes':50202499,
         'Tomatoes':14778786,

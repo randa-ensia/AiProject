@@ -3,13 +3,13 @@ algerian_crops = {
     "CHLEF": ["Tomatoes"            ],
     "LAGHOUAT": ["Dates", "Wheat"  ],
     "O.E.BOUAGHI": ["Corn"         ],
-    "BATNA": ["Dates"       ],
+    "BATNA": ["Dates","Corn"       ],
 
     "BISKRA": ["Tomatoes", "Greenpepper", "Dates", "Wheat", "Aubergines"  ],
-
+    "BECHAR": ["Corn"],
     "BLIDA": ["Potatoes", "Greenpepper", "Wheat", "Aubergines"          ],
     "BOUIRA": ["Potatoes", "Wheat"],
-  
+    "TAMANRASSET":["Corn"],
     "TEBESSA": ["Potatoes", "Dates"],
     "TLEMCEN": ["Tomatoes"     ],
     "TIARET": ["Potatoes"    , "Aubergines"],
@@ -24,7 +24,7 @@ algerian_crops = {
     "ANNABA": ["Potatoes", "Wheat"   ],
     "GUELMA": ["Wheat"     ],
     "CONSTANTINE": ["Wheat"     ],
-
+    "MEDEA":["Corn"],
     "MOSTAGANEM": ["Tomatoes", "Greenpepper"         , "Aubergines"     ],
     "MSILA": ["Greenpepper"     , "Aubergines"],
    
